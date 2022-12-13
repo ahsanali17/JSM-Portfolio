@@ -1,5 +1,5 @@
 import { FC, Fragment } from "react";
-import { Sidebar } from "..";
+import { LeftSidebar, RightSidebar } from "..";
 
 type LayoutProps = {
  children: React.ReactNode;
@@ -8,7 +8,8 @@ type LayoutProps = {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
    <Fragment>
-    <Sidebar/>
+    <LeftSidebar/>
+    <RightSidebar/>
     {children}
    </Fragment>
   )
