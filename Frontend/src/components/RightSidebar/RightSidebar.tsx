@@ -2,11 +2,7 @@ import { FC } from "react";
 
 import {RightSidebarWrapper, RightSidebarDiv,RightSidebarLink} from './styles';
 
-type RightSidebarProps = {
- children: React.ReactNode;
-}
-
-const RightSidebar: FC<RightSidebarProps> = () => {
+const RightSidebar: FC = () => {
  
  return ( 
   <>

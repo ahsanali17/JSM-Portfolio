@@ -3,11 +3,9 @@ import { FC } from "react";
 import { SidebarMenu, MenuItems, MenuItemLinks } from "./styles";
 import { SidebarData } from './LeftSidebarData';
 
-type LeftSidebarProps = {
- children: React.ReactNode;
-}
 
-const LeftSidebar: FC<LeftSidebarProps> = () => {
+
+const LeftSidebar: FC = () => {
  
  return (
   <>
