@@ -1,9 +1,11 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 
-export const NavbarData = [
- {path:'/', text: 'About', icon: <FaIcons.FaHome />},
- {path:'/', text: 'Experience', icon: <FaIcons.FaHome />},
- {path:'/', text: 'Projects', icon: <FaIcons.FaAddressCard />},
- {path:'/', text: 'Contact', icon: <FaIcons.FaAddressBook />},
+const NavbarData = [
+ {path:'#About', text: 'About', icon: <FaIcons.FaHome />},
+ {path:'#Experience', text: 'Experience', icon: <FaIcons.FaHome />},
+ {path:'#Projects', text: 'Projects', icon: <FaIcons.FaAddressCard />},
+ {path:'#Contact', text: 'Contact', icon: <FaIcons.FaAddressBook />},
 ]
+
+export default NavbarData

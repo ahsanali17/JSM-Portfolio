@@ -1,37 +1,42 @@
 import { FC, useState } from "react";
 import * as FaIcons from 'react-icons/fa';
 
-import {NavbarData} from './NavbarData';
-import { NavbarHeader, NavbarNav, NavbarItem, NavbarItemIcons, NavButton } from "./styles";
+import {NavbarData, NavbarMenuToggle} from '../index';
+import { Nav, NavbarContainer, MobileIcon, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink } from "./styles";
 import {NavbarLogo} from '../'
 
+interface NavbarDataProps {
+ path: string,
+ text: string,
+}
 
 const Navbar: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
  
-  return (
-   <NavbarHeader>
-    {/* Logo here */}
+ return (
+ <>
+  <Nav>
+   <NavbarContainer>
     <NavbarLogo />
-  
-    <NavbarNav isOpen={isOpen}>
-     {NavbarData.map((item, index) => {
-     return (
-      <NavbarItem key={index}>
-        {/* {item.icon} */}
-        {item.text}
-      </NavbarItem>
-     )
-     })}
-     <NavButton onClick={() => setIsOpen(!isOpen)}>
-      {/* <FaIcons.FaTimes /> */}
-     </NavButton>
-    </NavbarNav>
     
-    <NavButton onClick={() => setIsOpen(!isOpen)}>
+    <MobileIcon>
      <FaIcons.FaBars />
-    </NavButton>
-   </NavbarHeader>
-  )
+    </MobileIcon>
+    
+    <NavMenu>
+     {NavbarData.map((item: NavbarDataProps, index: number) => {
+      return (
+       <NavItem key={index}>
+        <NavItemLink to={item.path}>{item.text}</NavItemLink>
+       </NavItem>
+      ) 
+     })}
+    </NavMenu>
+    <NavResumeButton>
+     <NavResumeBtnLink href={'/resume'}>Resume</NavResumeBtnLink>
+    </NavResumeButton>
+   </NavbarContainer>
+  </Nav>
+ </>
+ )
 }
 export default Navbar;
