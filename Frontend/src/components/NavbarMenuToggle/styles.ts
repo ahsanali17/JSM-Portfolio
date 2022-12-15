@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 import * as FaIcons from 'react-icons/fa';
-import { Link } from 'react-scroll';
+import { Link as LinkS} from 'react-scroll';
+import Link from 'next/link';
 
-export const NavbarMenuToggleContainer = styled.aside`
+interface NavbarMenuToggleContainerProps {
+ isOpen: boolean;
+}
+
+export const NavbarMenuToggleContainer = styled.aside<NavbarMenuToggleContainerProps>`
  position: fixed;
  z-index: 999;
  width: 100%;
@@ -14,9 +19,9 @@ export const NavbarMenuToggleContainer = styled.aside`
  top: 0;
  left: 0;
  transition: 0.3s ease-in-out;
- /* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
- top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
- top: 0;
+ opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+ top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+ /* top: 0; */
 `;
 
 export const MenuIcon = styled.div`
@@ -36,17 +41,37 @@ export const CloseIcon = styled(FaIcons.FaTimes)`
 
 export const MobileNavbarMenuWrapper = styled.div``;
 export const MobileNavbarMenu = styled.div``;
-export const MobileNavbarMenuLink = styled(Link)`
+export const MobileNavbarMenuLink = styled(LinkS)`
  color: #fff;
  cursor: pointer;
  
  &:hover {
   color: #f35fd2;
+  transition: 0.2s ease-in-out;
  }
 `;
 
 export const MobileResumeBtnWrap = styled.div`
-
+ display: flex;
+ justify-content: center;
 `;
 
-export const MobileResumeBtnLink = styled(Link)``;
+export const MobileResumeBtnLink = styled(Link)`
+ border-radius: 50px;
+ background: #01bf71;
+ white-space: nowrap;
+ padding: 16pc 64px;
+ color: #010606;
+ font-size: 16px;
+ outline: none;
+ border: none;
+ cursor: pointer;
+ transition: all 0.2s ease-in-out;
+ text-decoration: none;
+ 
+ &:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #010606;
+ }
+`;

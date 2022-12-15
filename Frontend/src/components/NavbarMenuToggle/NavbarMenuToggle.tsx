@@ -1,15 +1,24 @@
-import React from "react";
+import {useState} from "react";
 import { FC, Fragment } from "react";
 import * as FaIcons from 'react-icons/fa';
 
 import { NavbarData } from '../index';
-import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink } from "./styles";
+import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink } from "./styles";
+
+interface IMenuToggle {
+ isOpen: boolean,
+}
 
 const NavbarMenuToggle = () => {
+ const [isOpen, setIsOpen] = useState<IMenuToggle | undefined>(undefined);
+ 
+ 
  return (
-  <NavbarMenuToggleContainer>
+  <NavbarMenuToggleContainer isOpen={!isOpen}>
    <MenuIcon>
+   <span onClick={setIsOpen}>
     <CloseIcon />
+   </span>
    </MenuIcon>
    
    <MobileNavbarMenuWrapper>
