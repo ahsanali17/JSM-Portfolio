@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState, MouseEventHandler, Fragment } from "react";
 import * as FaIcons from 'react-icons/fa';
 
 import {NavbarData, NavbarMenuToggle} from '../index';
@@ -11,16 +11,28 @@ interface NavbarDataProps {
 }
 
 const Navbar: FC = () => {
+ const [isOpen, setIsOpen] = useState<boolean>(false);
+ 
+ const handleClick: MouseEventHandler<SVGElement> = (event) => {
+  setIsOpen(!isOpen);
+}
  
  return (
- <>
+ <Fragment>
   <Nav>
    <NavbarContainer>
     <NavbarLogo />
     
     <MobileIcon>
-     <FaIcons.FaBars />
+     <FaIcons.FaBars onClick={handleClick} />
     </MobileIcon>
+    
+    {isOpen && (
+     <NavbarMenuToggle
+       isOpen={isOpen}
+       handleExit={handleClick}
+     />
+    )}
     
     <NavMenu>
      {NavbarData.map((item: NavbarDataProps, index: number) => {
@@ -36,7 +48,7 @@ const Navbar: FC = () => {
     </NavResumeButton>
    </NavbarContainer>
   </Nav>
- </>
+ </Fragment>
  )
 }
 export default Navbar;

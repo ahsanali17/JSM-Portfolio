@@ -5,4 +5,4 @@ export { default as RightSidebar} from './RightSidebar/RightSidebar';
 export { default as Navbar } from './Navbar/Navbar';
 export { default as NavbarData } from './Navbar/NavbarData'; 
 export { default as NavbarLogo } from './Logo/Logo';
-export { default as NavbarMenuToggle } from './NavbarMenuToggle/NavbarMenuToggle';
+export { default as NavbarMenuToggle } from './Navbar/NavbarMenuToggle/NavbarMenuToggle';

@@ -9,7 +9,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Fragment>
       <Navbar />
-      <NavbarMenuToggle />
 
       <>
         <LeftSidebar/>

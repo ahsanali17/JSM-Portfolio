@@ -1,24 +1,20 @@
-import {useState} from "react";
+import React, {MouseEventHandler, useState} from "react";
 import { FC, Fragment } from "react";
 import * as FaIcons from 'react-icons/fa';
 
-import { NavbarData } from '../index';
+import { NavbarData } from '../../index';
 import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink } from "./styles";
 
-interface IMenuToggle {
- isOpen: boolean,
+interface NavbarMenuToggle {
+ isOpen: boolean;
+ handleExit: MouseEventHandler<SVGElement>; 
 }
 
-const NavbarMenuToggle = () => {
- const [isOpen, setIsOpen] = useState<IMenuToggle | undefined>(undefined);
- 
- 
+const NavbarMenuToggle = ({isOpen, handleExit}: NavbarMenuToggle) => {
  return (
-  <NavbarMenuToggleContainer isOpen={!isOpen}>
+  <NavbarMenuToggleContainer isOpen={isOpen}>
    <MenuIcon>
-   <span onClick={setIsOpen}>
-    <CloseIcon />
-   </span>
+    <CloseIcon onClick={handleExit} />
    </MenuIcon>
    
    <MobileNavbarMenuWrapper>
@@ -33,7 +29,7 @@ const NavbarMenuToggle = () => {
     })}
    </MobileNavbarMenuWrapper>
    <MobileResumeBtnWrap>
-    
+    <MobileResumeBtnLink href={'/resume'}>Resume</MobileResumeBtnLink>
    </MobileResumeBtnWrap>
   </NavbarMenuToggleContainer>
  )
