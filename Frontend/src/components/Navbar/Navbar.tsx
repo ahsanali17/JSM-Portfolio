@@ -1,9 +1,9 @@
 import { FC, useState, MouseEventHandler, Fragment } from "react";
 import * as FaIcons from 'react-icons/fa';
 
+import {NavbarLogo} from '../';
 import {NavbarData, NavbarMenuToggle} from '../index';
-import { Nav, NavbarContainer, MobileIcon, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink } from "./styles";
-import {NavbarLogo} from '../'
+import { Nav, NavbarContainer, MobileIcon, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
 
 interface NavbarDataProps {
  path: string,
@@ -24,7 +24,7 @@ const Navbar: FC = () => {
     <NavbarLogo />
     
     <MobileIcon>
-     <FaIcons.FaBars onClick={handleClick} />
+     <HamburgerIcon onClick={handleClick} />
     </MobileIcon>
     
     {isOpen && (
@@ -43,9 +43,11 @@ const Navbar: FC = () => {
       ) 
      })}
     </NavMenu>
+    
     <NavResumeButton>
      <NavResumeBtnLink href={'/resume'}>Resume</NavResumeBtnLink>
     </NavResumeButton>
+    
    </NavbarContainer>
   </Nav>
  </Fragment>

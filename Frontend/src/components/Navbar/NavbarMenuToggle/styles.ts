@@ -21,32 +21,50 @@ export const NavbarMenuToggleContainer = styled.aside<NavbarMenuToggleContainerP
  transition: 0.3s ease-in-out;
  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
- /* top: 0; */
 `;
 
 export const MenuIcon = styled.div`
  position: absolute;
- top: 1.2rem;
- right: 1.5rem;
+ top: 1.9rem;
+ right: 2.2rem;
  background: transparent;
  font-size: 2rem;
  cursor: pointer;
  outline: none;
-
 `;
 
 export const CloseIcon = styled(FaIcons.FaTimes)`
  color: #fff;
+ 
+ &:hover {
+  color: blue;
+ }
 `;
 
-export const MobileNavbarMenuWrapper = styled.div``;
-export const MobileNavbarMenu = styled.div``;
+export const MobileNavbarMenuWrapper = styled.div`
+ display: grid;
+ justify-content: center;
+ align-items: center;
+`;
+
+export const MobileNavbarMenu = styled.ul`
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(1, 30px);
+ text-align: center;
+ padding: 0 64px;
+ 
+ @media screen and (max-width: 480px) {
+  grid-template-rows: repeat(1, 60px);
+ }
+`;
+
 export const MobileNavbarMenuLink = styled(LinkS)`
  color: #fff;
  cursor: pointer;
  
  &:hover {
-  color: #f35fd2;
+  color: #FF2565;
   transition: 0.2s ease-in-out;
  }
 `;

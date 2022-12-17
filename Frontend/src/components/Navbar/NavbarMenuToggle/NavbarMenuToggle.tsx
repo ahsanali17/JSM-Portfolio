@@ -27,10 +27,10 @@ const NavbarMenuToggle = ({isOpen, handleExit}: NavbarMenuToggle) => {
        </MobileNavbarMenu>
      )
     })}
+    <MobileResumeBtnWrap>
+      <MobileResumeBtnLink href={'/resume'}>Resume</MobileResumeBtnLink>
+    </MobileResumeBtnWrap>
    </MobileNavbarMenuWrapper>
-   <MobileResumeBtnWrap>
-    <MobileResumeBtnLink href={'/resume'}>Resume</MobileResumeBtnLink>
-   </MobileResumeBtnWrap>
   </NavbarMenuToggleContainer>
  )
 }

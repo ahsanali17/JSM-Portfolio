@@ -11,6 +11,10 @@ export const SidebarMenu = styled.div`
     left: 3.5rem;
     bottom: 3rem;
     width: 100px;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const MenuItems = styled.li`
