@@ -1,7 +1,7 @@
 import { FC, Fragment } from "react";
 import Image from "next/image";
 
-import { Logo } from '../../assets/index';
+import { Logo } from '../../../assets/index';
 import { NavLink } from "./styles";
 
 const NavbarLogo: FC = () => {

@@ -5,7 +5,7 @@ import {Link as LinkS} from "react-scroll";
 import * as FaIcons from 'react-icons/fa';
 
 export const Nav = styled.nav`
- background: #FF2332;
+ background: #fff;
  height: 80px;
  display: flex;
  justify-content: center;
@@ -70,7 +70,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavItemLink = styled(LinkS)`
- color: #fff;
+ color: #000;
  display: flex;
  align-items: center;
  text-decoration: none;
@@ -80,6 +80,10 @@ export const NavItemLink = styled(LinkS)`
  
  &.active {
   border-bottom: 3px solid #01bf71;
+ }
+ 
+ &:hover {
+  color: #01bf71;
  }
 `;
 
@@ -94,7 +98,7 @@ export const NavResumeButton = styled.nav`
 
 export const NavResumeBtnLink = styled(Link)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #f343;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
@@ -107,7 +111,7 @@ export const NavResumeBtnLink = styled(Link)`
   
   &:hover {
    transition: all 0.2s ease-in-out;
-   background: #fff;
+   background: #01bf71;
    color: #010606;
   }
 `;
