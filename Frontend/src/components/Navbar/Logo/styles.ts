@@ -9,5 +9,15 @@ export const NavLink = styled(Link)`
  display: flex;
  align-items: center;
  margin-left: 24px;
+ text-decoration: none;
 `;
 
+export const NameText = styled.p`
+ color: #000;
+ font-size: x-large;
+ font-family: 'Times New Roman', Times, serif;
+ 
+ &:hover {
+  color: blue;
+ }
+`;
