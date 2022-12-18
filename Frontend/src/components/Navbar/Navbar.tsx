@@ -3,7 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 
 import {NavbarLogo} from '../';
 import {NavbarData, NavbarMenuToggle} from '../index';
-import { Nav, NavbarContainer, MobileIcon, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
+import { Nav, NavbarContainer, MobileIcon, NavMenuContainer, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
 
 interface NavbarDataProps {
  path: string,
@@ -34,19 +34,21 @@ const Navbar: FC = () => {
      />
     )}
     
-    <NavMenu>
-     {NavbarData.map((item: NavbarDataProps, index: number) => {
-      return (
-       <NavItem key={index}>
-        <NavItemLink to={item.path}>{item.text}</NavItemLink>
-       </NavItem>
-      ) 
-     })}
-    </NavMenu>
-    
-    <NavResumeButton>
-     <NavResumeBtnLink href={'/resume'}>Resume</NavResumeBtnLink>
-    </NavResumeButton>
+    <NavMenuContainer>
+      <NavMenu>
+      {NavbarData.map((item: NavbarDataProps, index: number) => {
+        return (
+        <NavItem key={index}>
+          <NavItemLink to={item.path}>{item.text}</NavItemLink>
+        </NavItem>
+        ) 
+      })}
+      </NavMenu>
+      
+      <NavResumeButton>
+      <NavResumeBtnLink href={'/resume'}>Resume</NavResumeBtnLink>
+      </NavResumeButton>
+    </NavMenuContainer>
     
    </NavbarContainer>
   </Nav>
