@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ContactContainer, ContactFormTitle, ContactForm, ContactInputTitle, ContactInputField, ContractFormTextAndButtonContainer ,ContractTextAreaTitle, ContactTextArea, ContactFormButton} from './styles';
+import {ContactContainer, ContactFormTitle, ContactForm, ContactInputTitle, ContactInputField, ContractTextAreaTitle, ContactTextArea, ContactFormButton} from './styles';
 
 
 function Contact() {
@@ -19,14 +19,13 @@ function Contact() {
        </div>
       )
      })}
-     <ContractFormTextAndButtonContainer>
+     {/* <ContractFormTextAndButtonContainer> */}
       <ContractTextAreaTitle>Send Message</ContractTextAreaTitle>
       
       <ContactTextArea placeholder='Enter your message here'/>
       
       <ContactFormButton type='button'>Submit Message</ContactFormButton>
       
-     </ContractFormTextAndButtonContainer>
     </ContactForm>
    </ContactContainer>
   )

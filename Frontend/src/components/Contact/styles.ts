@@ -34,10 +34,6 @@ export const ContactInputField = styled.input`
  }
 `;
 
-export const ContractFormTextAndButtonContainer = styled.div`
- display: grid;
-`;
-
 export const ContractTextAreaTitle = styled.h4`
  font-family: ${contactFontFamily};
  font-weight: normal;
@@ -45,7 +41,8 @@ export const ContractTextAreaTitle = styled.h4`
 
 export const ContactTextArea = styled.textarea`
  background-color: yellow;
- /* height: 3rem; */
+ height: 3rem;
+ margin-bottom: 1rem;
  
  font-family: ${contactFontFamily};
  
@@ -56,14 +53,9 @@ export const ContactTextArea = styled.textarea`
 `;
 
 export const ContactFormButton = styled.button`
- margin-top: 10%;
- margin-bottom: 10%;
- 
  border: 1px solid black;
  cursor: pointer;
- 
  transition: color 0.2s;
- 
  color: rgba(0,0,0,0.5);
  
  &:hover {
