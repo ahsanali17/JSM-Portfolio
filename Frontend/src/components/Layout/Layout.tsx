@@ -1,5 +1,6 @@
 import { FC, Fragment } from "react";
-import { Navbar, LeftSidebar, RightSidebar, NavbarMenuToggle } from "../index";
+
+import { Navbar, LeftSidebar, RightSidebar, NavbarMenuToggle } from "../";
 
 type LayoutProps = {
  children: React.ReactNode;
@@ -10,10 +11,9 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <Fragment>
       <Navbar />
 
-      <>
-        <LeftSidebar/>
-        <RightSidebar/>
-      </>
+      <LeftSidebar/>
+      <RightSidebar/>
+      
       {children}
     </Fragment>
   )
