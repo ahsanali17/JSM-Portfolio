@@ -37,7 +37,7 @@ const TypedReactAnimation: FC<hookProps> = ({stringArray, typingSpeed, backingSp
 
  return (
    <div className="wrap">
-     <h1>Typed.js</h1>
+     {/* <h1>Typed.js</h1> */}
 
      <div className="type-wrap">
        <span style={{ whiteSpace: 'pre' }} ref={el} />
