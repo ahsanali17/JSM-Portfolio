@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-import {TypedReactHook} from '..';
+import {TypedReactAnimation} from '..';
 import { HeroSection } from './styles';
 
 
@@ -13,7 +13,7 @@ function Hero() {
   
   return (
     <HeroSection backgroundColor="#3498db" fontColor="#ffffff">
-      <TypedReactHook stringArray={stringArray} typingSpeed={60} backingSpeed={20} animationLoop={true} />
+      <TypedReactAnimation stringArray={stringArray} typingSpeed={60} backingSpeed={20} animationLoop={true} />
     </HeroSection>
   );
 }
