@@ -18,15 +18,14 @@ const NavbarMenuToggle = ({isOpen, handleExit}: NavbarMenuToggle) => {
    </MenuIcon>
    
    <MobileNavbarMenuWrapper>
-    {NavbarData.map((item, index) => {
-     return (
+    {NavbarData.map((item, index) => (
        <MobileNavbarMenu key={index}>
         <MobileNavbarMenuLink to={item.path}>
          {item.text}
         </MobileNavbarMenuLink>
        </MobileNavbarMenu>
-     )
-    })}
+      )
+    )}
     <MobileResumeBtnWrap>
       <MobileResumeBtnLink href={'/resume'}>Resume</MobileResumeBtnLink>
     </MobileResumeBtnWrap>
