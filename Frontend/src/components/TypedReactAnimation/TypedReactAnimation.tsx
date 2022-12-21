@@ -46,4 +46,4 @@ const TypedReactAnimation: FC<hookProps> = ({stringArray, typingSpeed, backingSp
  );
 };
 
-export default TypedReactHook
+export default TypedReactAnimation
