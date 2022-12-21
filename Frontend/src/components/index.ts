@@ -6,3 +6,4 @@ export { default as Navbar } from './Navbar/Navbar';
 export { default as NavbarData } from './Navbar/NavbarData'; 
 export { default as NavbarLogo } from './Navbar/Logo/Logo';
 export { default as NavbarMenuToggle } from './Navbar/NavbarMenuToggle/NavbarMenuToggle';
+export { default as Footer } from './Footer/Footer';
