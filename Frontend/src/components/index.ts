@@ -9,3 +9,4 @@ export { default as NavbarMenuToggle } from './Navbar/NavbarMenuToggle/NavbarMen
 export { default as Footer } from './Footer/Footer';
 export { default as Contact } from './Contact/Contact';
 export { default as Hero } from './Hero/Hero';
+export { default as TypedReactHook } from './TypedReactHook/TypedReactHook';
