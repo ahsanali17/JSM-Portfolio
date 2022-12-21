@@ -8,7 +8,7 @@ interface hookProps {
  animationLoop: boolean
 }
 
-const TypedReactHook: FC<hookProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop}) => {
+const TypedReactAnimation: FC<hookProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop}) => {
  // Create reference to store the DOM element containing the animation
  const el = useRef(null);
  // Create reference to store the Typed instance itself
