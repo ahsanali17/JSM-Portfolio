@@ -9,13 +9,6 @@ interface HeroProps {
 export const HeroSection = styled.section<HeroProps>`
   background-color: ${props => props.backgroundColor};
   color: ${props => props.fontColor};
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 93vh;
-  margin: 0px 10rem; */
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -28,11 +21,6 @@ export const HeroSection = styled.section<HeroProps>`
 `;
 
 export const HeroTextPartition = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: red; */
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,10 +31,6 @@ export const HeroTextPartition = styled.div`
 
 export const HeroText = styled.h1`
   margin: 15px 0;
-`;
-
-export const HeroText2 = styled.h2`
-  font-size: 21px;
 `;
 
 export const HeroPicture = styled.div`
