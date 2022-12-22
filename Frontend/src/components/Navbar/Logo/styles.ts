@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Link from "next/link";
+import Image from 'next/image';
 
 
 // Next Link Router Element
@@ -12,12 +13,18 @@ export const NavLink = styled(Link)`
  text-decoration: none;
 `;
 
+export const LogoImage = styled(Image)`
+ background-color: #fff;
+`
+
 export const NameText = styled.p`
- color: #000;
+ color: #fff;
  font-size: x-large;
  font-family: 'Times New Roman', Times, serif;
+ transition: transform 0.2s ease-in-out;
  
  &:hover {
-  color: blue;
+  color: green;
+  transform: rotateZ(-20deg);
  }
 `;
