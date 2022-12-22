@@ -31,10 +31,10 @@ export const MenuItemLinks = styled(Link)`
     padding: 0 2rem;
     font-size: 20px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     &:hover {
         /* background-color: #FF; */
-        color: blue;
+        color: green;
         width: 100%;
         border-radius: 5px;
     }

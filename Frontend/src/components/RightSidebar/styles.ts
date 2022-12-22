@@ -27,7 +27,7 @@ export const RightSidebarLink = styled.a`
  margin: 20px auto;
  padding: 10px;
  font-family: 'Times New Roman', Times, serif;
- color: red;
+ color: #fff;
  /* font-size: var(--fz-xxs); */
  line-height: var(--fz-lg);
  letter-spacing: 0.1em;
@@ -35,6 +35,6 @@ export const RightSidebarLink = styled.a`
  writing-mode: vertical-rl;
  
  &:hover {
-  color: blue;
+  color: green;
  }
 `;
