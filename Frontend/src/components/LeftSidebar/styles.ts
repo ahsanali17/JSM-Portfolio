@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import styled from 'styled-components'
+import Link from "next/link";
 
 export const SidebarMenu = styled.div`
     box-sizing: border-box;
@@ -39,4 +38,3 @@ export const MenuItemLinks = styled(Link)`
         border-radius: 5px;
     }
 `
-
