@@ -1,14 +1,14 @@
 import {useRef, useEffect, FC} from 'react';
 import Typed from 'typed.js';
 
-interface hookProps {
+interface typeAnimationProps {
  stringArray: string[],
  typingSpeed: number,
  backingSpeed: number,
  animationLoop: boolean
 }
 
-const TypedReactAnimation: FC<hookProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop}) => {
+const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop}) => {
  // Create reference to store the DOM element containing the animation
  const el = useRef(null);
  // Create reference to store the Typed instance itself
