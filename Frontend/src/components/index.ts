@@ -7,3 +7,5 @@ export { default as NavbarData } from './Navbar/NavbarData';
 export { default as NavbarLogo } from './Navbar/Logo/Logo';
 export { default as NavbarMenuToggle } from './Navbar/NavbarMenuToggle/NavbarMenuToggle';
 export { default as Footer } from './Footer/Footer';
+export { default as Hero } from './Hero/Hero';
+export { default as TypedReactAnimation } from './TypedReactAnimation/TypedReactAnimation';
