@@ -16,8 +16,8 @@ export const HeroSection = styled.section<HeroProps>`
   grid-gap: 50px;
   gap: 50px;
   justify-content: center;
-  margin: 40px;
-  min-height: 70vh;
+  margin: 0;
+  min-height: 94vh;
 `;
 
 export const HeroTextPartition = styled.div`
@@ -30,24 +30,14 @@ export const HeroTextPartition = styled.div`
 `;
 
 export const HeroText = styled.h1`
-  margin: 15px 0;
+  margin: 15px -25px;
+  font-size: 20px
 `;
 
 export const HeroPicture = styled.div`
-  -webkit-animation: home_slideIn__3MLMw 7s;
-  animation: {
-    animation-duration: 7s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: home_slideIn__3MLMw;
-  };
   border-radius: 10%;
   overflow: hidden;
-  width: 400px;
+  width: 400px;  
 `;
 
 export const HeroPictureBlock = styled.div`
