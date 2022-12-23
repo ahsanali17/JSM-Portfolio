@@ -31,6 +31,7 @@ const Navbar: FC = () => {
      <NavbarMenuToggle
        isOpen={isOpen}
        handleExit={handleClick}
+       NavbarData={NavbarData}
      />
     )}
     
