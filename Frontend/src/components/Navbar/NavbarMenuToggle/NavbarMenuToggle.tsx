@@ -2,15 +2,15 @@ import React, {MouseEventHandler, useState} from "react";
 import { FC, Fragment } from "react";
 import * as FaIcons from 'react-icons/fa';
 
-import { NavbarData } from '../../index';
 import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink } from "./styles";
 
 interface NavbarMenuToggle {
  isOpen: boolean;
  handleExit: MouseEventHandler<SVGElement>; 
+ Navbar: Object;
 }
 
-const NavbarMenuToggle = ({isOpen, handleExit}: NavbarMenuToggle) => {
+const NavbarMenuToggle = ({isOpen, handleExit, NavbarData}: NavbarMenuToggle) => {
  return (
   <NavbarMenuToggleContainer isOpen={isOpen}>
    <MenuIcon>
