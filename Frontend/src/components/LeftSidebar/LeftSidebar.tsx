@@ -11,12 +11,11 @@ const LeftSidebar: FC = () => {
     {path: '/', icon: <FaIcons.FaLinkedin />}, 
     {path: '/', icon: <FaIcons.FaTwitter />}, 
     {path: '/', icon: <FaIcons.FaInstagram />}, 
-   ]
+  ]
  
  return (
   <>
    <SidebarMenu>
-    
     {SidebarData.map((item, index) => (
       <MenuItems key={index}>
        <MenuItemLinks href={item.path}>
@@ -27,7 +26,6 @@ const LeftSidebar: FC = () => {
       </MenuItems>
      )
     )}
-    
    </SidebarMenu>
   
   </>
