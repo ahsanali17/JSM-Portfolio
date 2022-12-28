@@ -8,7 +8,7 @@ const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   
   const handleClick: MouseEventHandler<SVGElement> = (event) => {
-   setIsOpen(!isOpen);
+    setIsOpen(!isOpen);
   }
   
   const NavbarData = [
@@ -17,7 +17,7 @@ const Navbar: FC = () => {
     {path:'#Projects', text: 'Projects', icon: <FaIcons.FaAddressCard />},
     {path:'#Contact', text: 'Contact', icon: <FaIcons.FaAddressBook />},
   ] 
- 
+  
  return (
   <Nav>
    <NavbarContainer>
@@ -31,7 +31,7 @@ const Navbar: FC = () => {
      <NavbarMenuToggle
        isOpen={isOpen}
        handleExit={handleClick}
-       NavbarData={NavbarData}
+       NavbarDataProps={NavbarData}
      />
     )}
     
