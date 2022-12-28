@@ -33,7 +33,7 @@ const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, 
      // to prevent memory leaks
      typed.current.destroy();
    };
- }, []);
+ }, [animationLoop, backingSpeed, stringArray, typingSpeed]);
 
  return (
    <div className="wrap">
