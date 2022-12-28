@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Image from "next/image";
 
 interface AboutProps {
  backgroundColor: string;
@@ -18,4 +18,16 @@ export const AboutSection = styled.section<AboutProps>`
   justify-content: center;
   margin: 40px;
   min-height: 70vh;
+`;
+
+export const AboutSectionPicture = styled(Image)`
+
+`;
+
+export const AboutMeText = styled.p`
+
+`;
+
+export const TechnologyStack = styled.div`
+
 `;
