@@ -6,6 +6,10 @@ interface AboutProps {
  fontColor: string;
 }
 
+interface TooltipProps {
+  title: string;
+}
+
 export const AboutSection = styled.section<AboutProps>`
   background-color: ${props => props.backgroundColor};
   color: ${props => props.fontColor};
@@ -22,17 +26,16 @@ export const AboutSection = styled.section<AboutProps>`
 `;
 
 export const AboutMeTextAndPicture = styled.div`
-  margin: 10rem 15rem;
+  margin: 0 15rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 50px;
+  gap: 20px;
 `;
 
 export const AboutSectionPictureWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5%;
 `;
 
 export const AboutSectionPicture = styled(Image)`
@@ -62,6 +65,13 @@ export const TechnologyStack = styled.div`
   padding: 40px 0;
 `;
 
+export const TechnologyStackHeader = styled.h2`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5%;
+`;
+
 export const TechnologyStackIconContainer = styled.div`
   align-items: center;
   display: flex;
@@ -74,4 +84,14 @@ export const TechnologyStackIconContainer = styled.div`
   @media only screen and (max-width: 1000px) {
     flex-wrap: wrap;
   }
+`;
+
+export const TechnologyStackIcons = styled.span`
+  font-size: 2rem;
+  position: relative;
+  /* content: ${(props) => props.title}; */
+  &:hover {
+    color: green;
+  }
+  
 `;
