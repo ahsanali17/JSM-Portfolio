@@ -5,10 +5,11 @@ interface typeAnimationProps {
  stringArray: string[],
  typingSpeed: number,
  backingSpeed: number,
- animationLoop: boolean
+ animationLoop: boolean,
+ style: object
 }
 
-const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop}) => {
+const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop, style}) => {
  // Create reference to store the DOM element containing the animation
  const el = useRef(null as any);
  // Create reference to store the Typed instance itself
@@ -19,7 +20,8 @@ const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, 
      strings: stringArray,
      typeSpeed: typingSpeed,
      backSpeed: backingSpeed,
-     loop: animationLoop
+     loop: animationLoop,
+     style: style
    };
 
    // Assign the DOM element to the current property of the el ref object
@@ -33,14 +35,12 @@ const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, 
      // to prevent memory leaks
      typed.current.destroy();
    };
- }, [animationLoop, backingSpeed, stringArray, typingSpeed]);
+ }, [animationLoop, backingSpeed, stringArray, typingSpeed, style]);
 
  return (
    <div className="wrap">
-     {/* <h1>Typed.js</h1> */}
-
      <div className="type-wrap">
-       <span style={{ whiteSpace: 'pre' }} ref={el} />
+       <span style={style} ref={el} />
      </div>
    </div>
  );
