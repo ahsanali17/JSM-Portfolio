@@ -1,13 +1,14 @@
-import React from 'react'
 import {SiJavascript, SiSolidity, SiReact, SiNextdotjs, SiVite, SiRubyonrails,SiTypescript, SiRedux, SiMysql, SiGraphql, SiMongodb, SiJest } from 'react-icons/si';
 import {FaHardHat} from 'react-icons/fa';
-import {Tooltip} from 'react-tooltip';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'; // optional for styling
 
-import {AboutSection, AboutMeTextAndPicture, AboutSectionPictureWrapper, AboutSectionPicture, AboutMeTextWrapper, AboutMeText, TechnologyStack, TechnologyStackHeader, TechnologyStackIconContainer, TechnologyStackIcons} from './styles'
-import { HeroProfilePic } from '../../assets';
-import { TooltipTarget } from './Tooltip/styles';
+import {AboutSection, AboutMeTextAndPicture, AboutSectionPictureWrapper, AboutSectionPicture, AboutMeTextWrapper, AboutMeText, TechnologyStack, TechnologyStackHeader, TechnologyStackIconContainer, TechnologyStackIcons} from './styles';
+import '../../../styles/Home.module.css';
+import { AboutPicture } from '../../assets';
 
 function About() {
+
   const techStackData = [
     {icon: <SiJavascript />, iconName: 'Javascript'},
     {icon: <SiSolidity />, iconName: 'Solidity'},
@@ -24,14 +25,12 @@ function About() {
     {icon: <FaHardHat />, iconName: 'Hardhat'},
   ] 
   
-  // const firstFive = techStackData.slice(0,6);
-  
   return (
     <AboutSection className='#About' backgroundColor='black' fontColor='white'>
      
      <AboutMeTextAndPicture>
         <AboutSectionPictureWrapper>
-          <AboutSectionPicture src={HeroProfilePic} alt='My About Section picture' height={250} width={300} />
+          <AboutSectionPicture src={AboutPicture} alt='My About Section picture' height={250} width={300} />
         </AboutSectionPictureWrapper>
         
         <AboutMeTextWrapper>
@@ -41,30 +40,24 @@ function About() {
         </AboutMeTextWrapper>
       </AboutMeTextAndPicture>
       
-      
       <TechnologyStack>
         <TechnologyStackHeader>
-          Technologies & Tools I work with
+          Technologies & Tools I Work With
         </TechnologyStackHeader>
         <TechnologyStackIconContainer>
           {techStackData.map((item, index) => (
             <div key={index}>
-              <TechnologyStackIcons>
-                {item.icon}
-              </TechnologyStackIcons>
+              <Tippy content={item.iconName}>
+                <TechnologyStackIcons>
+                  {item.icon}
+                </TechnologyStackIcons>
+              </Tippy>
             </div>
           ))}
-            <Tooltip text="hey" position="top">
-              <TooltipTarget>I am target</TooltipTarget>
-            </Tooltip>
-          </TechnologyStackIconContainer>
+      </TechnologyStackIconContainer>
       </TechnologyStack>
     </AboutSection>
   )
 }
 
 export default About;
-
-function useKey() {
-  throw new Error('Function not implemented.');
-}
