@@ -6,10 +6,6 @@ interface AboutProps {
  fontColor: string;
 }
 
-interface TooltipProps {
-  title: string;
-}
-
 export const AboutSection = styled.section<AboutProps>`
   background-color: ${props => props.backgroundColor};
   color: ${props => props.fontColor};
@@ -25,33 +21,94 @@ export const AboutSection = styled.section<AboutProps>`
 `;
 
 export const AboutMeTextAndPicture = styled.div`
-  margin: 0 15rem;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+  display: inherit;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  
+  @media screen and (max-width: 2560px) {
+    flex-direction: row;
+    padding: 0px 100px;
+  }
+  
+  @media screen and (max-width: 1440px) {
+    flex-direction: row;
+    padding: 0px 100px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 0px 80px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0px 70px;
+  }
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+  
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
 `;
 
 export const AboutSectionPictureWrapper = styled.div`
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
 `;
 
 export const AboutSectionPicture = styled(Image)`
-  width: 50rem;
-  height: 35rem;
+  width: 25vw;
+  height: 35vh;
   border-radius: 8%;
+  
+  @media screen and (max-width: 768px) {
+    width: 18rem;
+    height: 15rem;
+  }
+  
+  @media screen and (max-width: 425px) {
+    width: 18rem;
+    height: 15rem;
+  }
+  
+  @media screen and (max-width: 375px) {
+    width: 18rem;
+    height: 15rem;
+  }
+  
+  @media screen and (max-width: 320px) {
+    width: 12rem;
+    height: 10rem;
+  }
 `;
 
 export const AboutMeTextWrapper = styled.div`
-  box-sizing: inherit;
-  display: flex;
-  align-items: center;
+  flex: 2;
 `;
 
 export const AboutMeText = styled.p`
-  margin: 10rem 0;
+  padding: 0px 100px;
   font-size: xx-large;
+  
+  @media screen and (max-width: 320px) {
+    font-size: medium;
+    padding: 20px 50px;
+  }
 `;
 
 export const TechnologyStack = styled.div`
