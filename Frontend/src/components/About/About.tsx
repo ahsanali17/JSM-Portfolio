@@ -30,7 +30,7 @@ function About() {
      
      <AboutMeTextAndPicture>
         <AboutSectionPictureWrapper>
-          <AboutSectionPicture src={AboutPicture} alt='My About Section picture' height={250} width={300} />
+          <AboutSectionPicture src={AboutPicture} alt='My About Section picture' />
         </AboutSectionPictureWrapper>
         
         <AboutMeTextWrapper>
