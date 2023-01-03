@@ -1,15 +1,23 @@
 import { FC, useState, MouseEventHandler } from "react";
+import * as FaIcons from 'react-icons/fa';
 
-import {NavbarLogo, NavbarData, NavbarMenuToggle} from '../';
+import {NavbarLogo, NavbarMenuToggle} from '../';
 import { Nav, NavbarContainer, MobileIcon, NavMenuContainer, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
 
 const Navbar: FC = () => {
- const [isOpen, setIsOpen] = useState<boolean>(false);
- 
- const handleClick: MouseEventHandler<SVGElement> = (event) => {
-  setIsOpen(!isOpen);
-}
- 
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  
+  const handleClick: MouseEventHandler<SVGElement> = (event) => {
+    setIsOpen(!isOpen);
+  }
+  
+  const NavbarData = [
+    {path:'#About', text: 'About', icon: <FaIcons.FaHome />},
+    {path:'#Experience', text: 'Experience', icon: <FaIcons.FaHome />},
+    {path:'#Projects', text: 'Projects', icon: <FaIcons.FaAddressCard />},
+    {path:'#Contact', text: 'Contact', icon: <FaIcons.FaAddressBook />},
+  ] 
+  
  return (
   <Nav>
    <NavbarContainer>
@@ -23,6 +31,7 @@ const Navbar: FC = () => {
      <NavbarMenuToggle
        isOpen={isOpen}
        handleExit={handleClick}
+       NavbarDataProps={NavbarData}
      />
     )}
     
