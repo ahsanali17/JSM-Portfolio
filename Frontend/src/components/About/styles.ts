@@ -18,8 +18,7 @@ export const AboutSection = styled.section<AboutProps>`
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  grid-gap: 50px;
-  gap: 50px;
+  gap: 10px;
   justify-content: center;
   margin: 40px;
   min-height: 70vh;
@@ -86,7 +85,7 @@ export const TechnologyStackIconContainer = styled.div`
   }
 `;
 
-export const TechnologyStackIcons = styled.span`
+export const TechnologyStackIcons = styled.a`
   font-size: 2rem;
   position: relative;
   /* content: ${(props) => props.title}; */
