@@ -29,22 +29,46 @@ export const HeroTextPartition = styled.div`
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  
+  @media screen and (max-width: 600px) {
+    padding-right: 5rem;
+  }
 `;
 
 export const HeroText = styled.h1`
   font-size: 20px;
   width: 500px;
   
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 2560px) {
+    font-size: 30px;
+    width: 100%;
+    padding-left: 3rem;
+  }
+  
+  @media screen and (max-width: 1440px) {
+    font-size: 25px;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
     width: 100%;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
     width: 100%;
+  }
+  
+  @media screen and (max-width: 425px) {
+    font-size: 20px;
+    width: 15rem;
+    padding-left: 2rem;
   } 
   
-  @media screen and (max-width: 500px) {
-    width: 90%;
+  @media screen and (max-width: 320px) {
+    width: 100%;
   } 
 `;
 
@@ -54,9 +78,8 @@ export const HeroPicture = styled.div`
   justify-content: center;
   align-items: center;
   
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 600px) {
     width: 300px;
-    
   }
 `;
 
