@@ -53,6 +53,11 @@ export const HeroPicture = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
+  
+  @media screen and (min-width: 320px) {
+    width: 300px;
+    
+  }
 `;
 
 export const HeroPictureContainer = styled.div`
@@ -64,4 +69,7 @@ export const HeroPictureContainer = styled.div`
     width: 100%;
   }
   
+  @media screen and (max-width: 320px) {
+    width: 100%;
+  }
 `; 
