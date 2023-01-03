@@ -8,7 +8,7 @@ import { HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextParti
 function Hero() {
   
   const nameString = [
-    "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
+    "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/><br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
   ]
   
   return (
