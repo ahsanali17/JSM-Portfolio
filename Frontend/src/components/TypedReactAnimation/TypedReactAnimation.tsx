@@ -10,9 +10,9 @@ interface typeAnimationProps {
 
 const TypedReactAnimation: FC<typeAnimationProps> = ({stringArray, typingSpeed, backingSpeed, animationLoop}) => {
  // Create reference to store the DOM element containing the animation
- const el = useRef(null);
+ const el = useRef(null as any);
  // Create reference to store the Typed instance itself
- const typed = useRef(null);
+ const typed = useRef(null as any);
 
  useEffect(() => {
    const options = {
