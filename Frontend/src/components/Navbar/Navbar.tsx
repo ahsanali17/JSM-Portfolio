@@ -7,8 +7,8 @@ import { Nav, NavbarContainer, MobileIcon, NavMenuContainer, NavMenu,NavItem,Nav
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   
-  const handleClick: MouseEventHandler<SVGElement> = (event) => {
-    setIsOpen(!isOpen);
+  const handleClick = () => {
+    setIsOpen(prev => !prev);
   }
   
   const NavbarData = [
@@ -32,6 +32,7 @@ const Navbar: FC = () => {
        isOpen={isOpen}
        handleExit={handleClick}
        NavbarDataProps={NavbarData}
+       setIsOpen={setIsOpen}
      />
     )}
     
