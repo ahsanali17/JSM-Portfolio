@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import styled from 'styled-components'
 
 export const SidebarMenu = styled.div`
@@ -25,7 +23,7 @@ export const MenuItems = styled.li`
     padding: 1rem 0 1.25rem;  
 `;
 
-export const MenuItemLinks = styled(Link)`
+export const MenuItemLinks = styled.a`
     display: flex;
     align-items: center;
     padding: 0 2rem;
@@ -33,8 +31,7 @@ export const MenuItemLinks = styled(Link)`
     text-decoration: none;
     color: #000;
     &:hover {
-        /* background-color: #FF; */
-        color: blue;
+        color: green;
         width: 100%;
         border-radius: 5px;
     }
