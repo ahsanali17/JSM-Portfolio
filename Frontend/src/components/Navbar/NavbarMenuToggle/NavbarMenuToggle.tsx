@@ -1,6 +1,6 @@
 import { Dispatch, MouseEventHandler} from "react";
 
-import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink, NavbarSocialIconLinks, SidebarSocialIconsWrapper, NavbarSocialIconLinkContainer, MobileNavbarEmailLink, MobileNavbarEmailDiv, MobileNavbarMenuToggleContainer2 } from "./styles";
+import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink, NavbarSocialIconLinks, SidebarSocialIconsWrapper, MobileNavbarEmailLink, MobileNavbarEmailDiv, MobileNavbarMenuToggleContainer2 } from "./styles";
 import { SidebarData } from '../../LeftSidebar/LeftSidebar';
 
 
