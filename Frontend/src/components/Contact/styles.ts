@@ -1,75 +1,5 @@
 import styled from "styled-components";
 
-const contactFontFamily = `'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif'`
-
-// export const ContactContainer = styled.div`
-//  display: grid;
-//  position: relative;
-//  justify-content: center;
-//  align-items: center;
-// `;
-
-// export const ContactFormTitle = styled.h2`
-//  font-family: ${contactFontFamily};
-// `;
-
-// export const ContactForm = styled.form`
-//  display: grid;
-//  justify-content: center;
-//  align-items: center;
-// `;
-
-// export const ContactInputTitle = styled.h4`
-//  font-family: ${contactFontFamily};
-//  font-weight: normal;
-// `;
-
-// export const ContactInputField = styled.input`
-//  background-color: yellow;
-//  height: 1.5rem;
- 
-//  &:focus::placeholder {
-//   font-size: smaller;
-//   transform: translateY(-20%);
-//  }
-// `;
-
-// export const ContractFormTextContainer = styled.div`
-//  display: grid;
-//  margin-bottom: 1rem;
-// `;
-
-// export const ContractTextAreaTitle = styled.h4`
-//  font-family: ${contactFontFamily};
-//  font-weight: normal;
-//  margin-bottom: 1rem;
-// `;
-
-// export const ContactTextArea = styled.textarea`
-//  height: 3rem;
-//  margin-bottom: 1rem;
-//  width: 100%;
- 
-//  font-family: ${contactFontFamily};
- 
-//  &:focus::placeholder {
-//   font-size: smaller;
-//   transform: translateY(-20%);
-//  }
-// `;
-
-// export const ContactFormButton = styled.button`
-//  border: 1px solid black;
-//  cursor: pointer;
-//  transition: color 0.2s;
-//  color: rgba(0,0,0,0.5);
-//  border-radius: 2.5px;
- 
-//  &:hover {
-//   color: rgba(0,0,0,1);
-//  }
-// `;
-
 export const ContactSectionContainer = styled.section`
   align-content: center;
   align-items: center;
@@ -79,7 +9,7 @@ export const ContactSectionContainer = styled.section`
   gap: 10px;
   justify-content: center;
   margin: 40px;
-  min-height: 70vh;
+  min-height: 100vh;
 `;
 
 export const ContactMainDiv = styled.div`
@@ -89,6 +19,18 @@ export const ContactMainDiv = styled.div`
  flex-direction: column;
  margin-top: 2.5rem;
  padding: 0 10rem;
+ 
+ @media screen and (max-width: 375px) {
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+ }
+ 
+ @media screen and (max-width: 360px) {
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+ }
 `;
 
 export const ContactArticle = styled.article`
@@ -96,7 +38,6 @@ export const ContactArticle = styled.article`
  margin-bottom: 5rem;
  position: relative;
  text-align: center;
- 
 `;
 
 export const ContactArticleWrapper = styled.div`
@@ -112,6 +53,14 @@ export const ContactArticleH1 = styled.h1`
  max-width: unset;
  opacity: 1;
  transform: translate3d(0,0,0);
+ 
+ @media screen and (max-width: 375px) {
+  font-size: 1.8rem;
+ }
+ 
+ @media screen and (max-width: 360px) {
+  font-size: 1.63rem;
+ }
 `;
 
 export const ContactArticleP = styled.p`
@@ -123,6 +72,14 @@ export const ContactArticleP = styled.p`
  margin-top: 15px;
  opacity: 1;
  transform: translate3d(0,0,0);
+ 
+ @media screen and (max-width: 375px) {
+  font-size: 1.8rem;
+ }
+ 
+ @media screen and (max-width: 360px) {
+  font-size: 1.5rem;
+ }
 `;
 
 export const ContactForm = styled.form`
@@ -130,10 +87,13 @@ export const ContactForm = styled.form`
  box-pack: center;
  box-align: center;
  justify-content: center;
+
+ @media screen and (max-width: 375px) {
+  width: 100%;
+ }
  
- @media screen and (max-width: 700px) {
-  width: 60%;
-  min-width: 500px;
+ @media screen and (max-width: 360px) {
+  width: 100%;
  }
 `;
 
@@ -143,6 +103,11 @@ export const ContactFormRow1 = styled.div`
  margin-bottom: 3rem;
  position: relative;
  width: 100%;
+ 
+ @media screen and (max-width: 767px) {
+  flex-direction: column;
+  justify-content: center;
+ }
 `;
 
 export const ContactFormRow2 = styled.div`
@@ -161,8 +126,9 @@ export const ContactFormInputGroup = styled.div`
  &:not(:last-child) {margin-right: 20px};
  
  color: rgba(61, 21, 95, 0.5);
+ 
  @media screen and (max-width: 700px) {
-  width: 45%;
+  width: 100%;
  }
 `;
 
@@ -180,6 +146,18 @@ export const ContactFormInputLabel = styled.label`
  &:hover {
   color: green;
  }
+ 
+ @media screen and (max-width: 767px) {
+  width: 100%;
+  line-height: 5rem;
+  font-size: 1.5rem;
+ }
+ @media screen and (max-width: 500px) {
+  width: 100%;
+  line-height: 4rem;
+  font-size: 1.2rem;
+ }
+ 
 `;
  
 export const ContactFormInputs = styled.input`
