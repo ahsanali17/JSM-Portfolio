@@ -167,8 +167,9 @@ export const ContactFormInputGroup = styled.div`
 `;
 
 export const ContactFormInputLabel = styled.label`
- color: grey;
+ color: white;
  cursor: pointer;
+ font-size: 1.6rem;
  font-weight: 200;
  margin-bottom: 5px;
  
@@ -189,6 +190,7 @@ export const ContactFormInputs = styled.input`
  padding: 0.6em;
  padding-left: 0;
  position: relative;
+ font-size: 1.25rem;
  
  &:focus-within {
   color: white;
@@ -201,12 +203,17 @@ export const ContactFormTextArea = styled.textarea`
  border-bottom: 1px solid;
  border-radius: 0;
  color: green;
+ font-size: 1.25rem;
  overflow: auto;
  padding: 0.6em;
  padding-left: 0;
  position: relative;
  resize: none;
  -webkit-tap-highlight-color: transparent;
+ 
+ &:focus-within {
+  color: white;
+ }
 `;
 
 export const ContactFormButtonContainer = styled.div`

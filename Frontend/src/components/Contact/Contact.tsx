@@ -45,7 +45,7 @@ function Contact() {
             </ContactFormInputLabel>
             
             <ContactFormTextArea id="message" name="message" placeholder="Hey I'd like to speak to you about our products at Company Z, let's plan a meeting to talk.."
-            required rows={6} minLength={30} 
+            required rows={3} minLength={30} 
             />
           </ContactFormRow2>
           
