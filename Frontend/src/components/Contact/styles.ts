@@ -233,6 +233,6 @@ export const ContactFormButtonDiv = styled.div`
  border: 1px solid green;
  
  &:hover{
-  color: $white;
+  color: white;
  }
 `;
