@@ -2,7 +2,6 @@ import React from 'react'
 
 import { ContactForm, ContactFormButton, ContactSectionContainer, ContactMainDiv, ContactArticle, ContactArticleWrapper, ContactArticleH1, ContactArticleP, ContactFormRow1, ContactFormRow2, ContactFormInputGroup, ContactFormInputLabel, ContactFormInputs, ContactFormTextArea, ContactFormButtonContainer, ContactFormButtonDiv} from './styles';
 
-
 function Contact() {
   return (
     <ContactSectionContainer id="#Contact">
@@ -18,8 +17,9 @@ function Contact() {
           </ContactArticleWrapper>
         </ContactArticle>
         
-        <ContactForm method="post" target='_blank'>
-          <input type="hidden" />
+        <ContactForm id="contact" method="POST" action="https://formsubmit.co/ahsantime1@gmail.com">
+          <input type="hidden" name="_url" value="https://ahsansyed.com"/>
+
           
           <ContactFormRow1>
             <ContactFormInputGroup>
@@ -27,7 +27,7 @@ function Contact() {
                 Your Name
               </ContactFormInputLabel>
               
-              <ContactFormInputs id="full-name" placeholder="Enter your Name" />
+              <ContactFormInputs id="full-name" name="name" placeholder="Enter your Name" type="text" required/>
             </ContactFormInputGroup>
             
             <ContactFormInputGroup>
@@ -35,7 +35,7 @@ function Contact() {
                 Email Address
               </ContactFormInputLabel>
               
-              <ContactFormInputs id="email-address" placeholder="Enter your email address" />
+              <ContactFormInputs id="email-address" name="email" placeholder="Enter your email address" type="email" required />
             </ContactFormInputGroup>
           </ContactFormRow1>
         
@@ -44,15 +44,21 @@ function Contact() {
               Your Message
             </ContactFormInputLabel>
             
-            <ContactFormTextArea id="message" name="message" placeholder="Hey I'd like to speak to you about our products at Company Z, let's plan a meeting to talk.."
-            required rows={3} minLength={30} 
+            <ContactFormTextArea 
+              id="message" 
+              name="message" 
+              placeholder="Hey I'd like to speak to you about our products at Company Z, let's plan a meeting to talk.."
+              required rows={3} 
+              minLength={30} 
             />
           </ContactFormRow2>
           
           <ContactFormButtonContainer>
-            <ContactFormButton type="submit" id="submit-button">
+            <ContactFormButton 
+              type="submit" 
+              id="submit-button" 
+            >
               <ContactFormButtonDiv>
-                
                 Submit
               </ContactFormButtonDiv>
             </ContactFormButton>
