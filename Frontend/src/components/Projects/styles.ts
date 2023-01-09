@@ -5,6 +5,7 @@ export const ProjectSectionContainer = styled.section`
  align-items: center;
  display: flex;
  flex-direction: column;
+ text-align: center;
  flex-wrap: wrap;
  gap: 10px;
  justify-content: center;
@@ -33,5 +34,12 @@ export const FeaturedProjectContainer = styled.div`
 `;
 
 export const OtherProjectsContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding-top: 10%;
+  @media screen and (max-width: 320px) {
+   display: flex;
+   flex-direction: column;
+  }
 `;
-

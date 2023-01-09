@@ -5,12 +5,17 @@ export const CardContainer = styled.div`
  flex-direction: column;
  align-items: center;
  justify-content: center;
- width: 300px;
- height: 400px;
- background-color: grey;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ width: 18rem;
+ height: 100%;
+ background-color: blue;
+ box-shadow: 5px 5px 8px 0 rgb(125 121 121);
  border-radius: 5px;
- padding: 20px;
+ padding: 2rem 1.75rem;
+
+ &:hover {
+  translate: 0% -5px; 
+  box-shadow:5px 5px 15px 3px rgb(125 121 121);
+ }
 `;
 
 export const IconContainer = styled.div`
