@@ -9,4 +9,5 @@ export { default as Contact } from './Contact/Contact';
 export { default as Hero } from './Hero/Hero';
 export { default as TypedReactAnimation } from './TypedReactAnimation/TypedReactAnimation';
 export { default as About} from './About/About'; 
-export { default as Experience} from './Experience/Experience'; 
+export { default as Project} from './Projects/Projects'; 
+export { default as ProjectCard} from './Projects/ProjectCard/ProjectCard'; 

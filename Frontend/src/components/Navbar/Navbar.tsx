@@ -13,7 +13,6 @@ const Navbar: FC = () => {
   
   const NavbarData = [
     {path:'#About', text: 'About', icon: <FaIcons.FaHome />},
-    {path:'#Experience', text: 'Experience', icon: <FaIcons.FaHome />},
     {path:'#Projects', text: 'Projects', icon: <FaIcons.FaAddressCard />},
     {path:'#Contact', text: 'Contact', icon: <FaIcons.FaAddressBook />},
   ] 
@@ -47,7 +46,7 @@ const Navbar: FC = () => {
       </NavMenu>
       
       <NavResumeButton>
-      <NavResumeBtnLink href="/resume">Resume</NavResumeBtnLink>
+      <NavResumeBtnLink href="https://drive.google.com/file/d/1kdj5oP6Ha5YuVnj3gMW4NLxz4SKdXZQo/view?usp=sharing" target="_blank">Resume</NavResumeBtnLink>
       </NavResumeButton>
     </NavMenuContainer>
     
