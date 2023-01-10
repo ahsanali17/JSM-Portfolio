@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import {TypedReactAnimation} from '..';
 import { HeroProfilePic } from '../../assets';
-import { HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextPartition } from './styles';
+import { HeroMainContainer, HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextPartition } from './styles';
 
 function Hero() {
   
@@ -13,18 +13,22 @@ function Hero() {
   
   return (
     <HeroSection backgroundColor="#000ff906" fontColor="#ffffff">
-      <HeroTextPartition>
-        <HeroText>
-          <TypedReactAnimation stringArray={nameString} typingSpeed={40} backingSpeed={20} animationLoop={false} 
-          style={{width:"100px", color: "#ffcc"}}
-          />
-        </HeroText>
-      </HeroTextPartition>
-      <HeroPicture>
-          <HeroPictureContainer>
-            <Image src={HeroProfilePic} alt='My hero sections profile picture' fill style={{borderRadius: '20px', boxShadow: "5px 5px 50px #7d7979"}} />
-          </HeroPictureContainer>
-      </HeroPicture>
+      <HeroMainContainer>
+        
+        <HeroTextPartition>
+          <HeroText>
+            <TypedReactAnimation stringArray={nameString} typingSpeed={40} backingSpeed={20} animationLoop={false} 
+            style={{width:"100px", color: "#ffcc", fontSize:"1.8rem"}}
+            />
+          </HeroText>
+        </HeroTextPartition>
+        <HeroPicture>
+            <HeroPictureContainer>
+              <Image src={HeroProfilePic} alt='My hero sections profile picture' fill style={{borderRadius: '20px', boxShadow: "5px 5px 50px #7d7979"}} />
+            </HeroPictureContainer>
+        </HeroPicture>
+        
+      </HeroMainContainer>
     </HeroSection>
   );
 }

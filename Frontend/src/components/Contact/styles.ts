@@ -10,6 +10,7 @@ export const ContactSectionContainer = styled.section`
   justify-content: center;
   margin: 40px;
   min-height: 100vh;
+  width: 100%;
 `;
 
 export const ContactMainDiv = styled.div`

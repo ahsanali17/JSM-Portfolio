@@ -8,47 +8,46 @@ interface HeroProps {
 export const HeroSection = styled.section<HeroProps>`
   background-color: ${props => props.backgroundColor};
   color: ${props => props.fontColor};
-  align-content: center;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
   justify-content: center;
-  padding: 20px 100px;
-  
+  margin: 40px 40px;
   min-height: 94vh;
+  width: 100%
+`;
+
+export const HeroMainContainer = styled.div`
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  padding: 100px 300px;
+  gap: 10px;
   
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1440px) {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 0px;
   }
 `;
 
 export const HeroTextPartition = styled.div`
-  display: flex;
   flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  
-  @media screen and (max-width: 600px) {
-    padding-right: 5rem;
-  }
+  padding: 100px
 `;
 
 export const HeroText = styled.h1`
   font-size: 20px;
   width: 500px;
+  text-align: center;
   
   @media screen and (max-width: 2560px) {
     font-size: 30px;
     width: 100%;
-    padding-left: 3rem;
   }
   
   @media screen and (max-width: 1440px) {
     font-size: 25px;
     width: 100%;
-    padding-left: 1rem;
   }
   
   @media screen and (max-width: 1024px) {
@@ -64,11 +63,6 @@ export const HeroText = styled.h1`
   @media screen and (max-width: 425px) {
     font-size: 20px;
     width: 15rem;
-    padding-left: 2rem;
-  } 
-  
-  @media screen and (max-width: 320px) {
-    width: 100%;
   } 
 `;
 
@@ -77,22 +71,26 @@ export const HeroPicture = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
-  
-  @media screen and (max-width: 600px) {
-    width: 300px;
-  }
 `;
 
 export const HeroPictureContainer = styled.div`
+  display: flex;
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 30rem;
+  height: 30rem;
+  
+  @media screen and (max-width: 768px) {
+    width: 25rem;
+    height: 25rem;
+  }
   
   @media screen and (max-width: 600px) {
-    width: 100%;
+    width: 20rem;
+    height: 20rem;
   }
   
   @media screen and (max-width: 320px) {
-    width: 100%;
+    width: 18rem;
+    height: 15rem;
   }
 `; 
