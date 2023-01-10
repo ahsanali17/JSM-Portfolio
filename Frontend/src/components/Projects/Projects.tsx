@@ -1,18 +1,17 @@
 import React from 'react'
-import { FaAddressBook } from 'react-icons/fa';
 
 import { ProjectCard } from '../index';
-import { ProjectMainContainer, ProjectSectionContainer, FeaturedProjectContainer, OtherProjectsContainer, ProjectCardContainer } from './styles';
+import { ProjectMainContainer, ProjectSectionContainer, FeaturedProjectContainer, OtherProjectsContainer } from './styles';
 
 function Projects() {
   const projects = [
     {
       id: 1,
       githubCardLink: '',
-      liveSiteLink: '',
+      liveSiteLink: 'https://lyriks-music-jngo27.vercel.app/home',
       itemCardTitle: 'Lyriks',
       itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-      itemTechStack: ["Dog", "Cow"]
+      itemTechStack: ["NextJS ", "React ", "Redux ", "Styled Components ", "Shazam API" ]
     },
     {
       id: 2,
@@ -20,7 +19,7 @@ function Projects() {
       liveSiteLink: '',
       itemCardTitle: 'Morrent',
       itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-      itemTechStack: ["Dog", "Cow"]
+      itemTechStack: ["Typescript ", "React ", "Styled Components ", "ExpressJS ", "MongoDB ", "GoogleOAuth 2 ", "PassportJS ", "Stripe" ]
     },
     {
       id: 3,
@@ -40,8 +39,8 @@ function Projects() {
     },
     {
       id: 5,
-      githubCardLink: '',
-      liveSiteLink: '',
+      githubCardLink: 'a',
+      liveSiteLink: 'a',
       itemCardTitle: 'Rocket Elevators',
       itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
       itemTechStack: ["Dog", "Cow"]
@@ -76,7 +75,7 @@ function Projects() {
           {projects.map((item, index) => (
             <div key={index}>
               <ProjectCard 
-                gihubLink={item.githubCardLink} 
+                githubLink={item.githubCardLink} 
                 liveLink={item.liveSiteLink}
                 itemTitle={item.itemCardTitle}
                 itemDescription={item.itemCardDescription}

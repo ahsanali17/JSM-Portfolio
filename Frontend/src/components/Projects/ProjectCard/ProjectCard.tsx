@@ -2,38 +2,45 @@ import React, { FC } from 'react';
 import {AiOutlineFolder} from 'react-icons/ai';
 import {FiGithub, FiExternalLink} from 'react-icons/fi';
 
-import {CardContainer, IconContainer, Title, Description, TechStackText } from './styles'
+import {CardContainer, IconContainer, Title, Description, TechStackText, CardBodyContainer, TechStackContainer, TechStackHeader } from './styles'
 
 interface ProjectCardProps {
- gihubLink: string;
+ githubLink: string;
  liveLink: string;
  itemTitle: string;
  itemDescription: string;
  itemTechStack: string[];
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ gihubLink, liveLink, itemTitle, itemDescription, itemTechStack }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ githubLink, liveLink, itemTitle, itemDescription, itemTechStack }) => {
  return (
    <CardContainer>
      <IconContainer>
         <span><AiOutlineFolder/></span>
         
         <div>
-         <a href={gihubLink} target="_blank" rel="noreferrer">
-          <span><FiGithub /></span>
+         <a href={githubLink} target="_blank" rel="noreferrer">
+          <span className="darker-span">
+            {githubLink ? <FiGithub /> : ''}
+          </span>
          </a>
          <a href={liveLink} target="_blank" rel="noreferrer">
-          <span><FiExternalLink /></span>
+          <span className="darker-span">
+            {liveLink ? <FiExternalLink /> : ''}
+          </span>
          </a>
        </div>
      </IconContainer>
-     <Title>{itemTitle}</Title>
-     <Description>{itemDescription}</Description>
-     <TechStackText>
-       {itemTechStack.map((string, index) => (
-         <p key={index}>{string}</p>
-       ))}
-     </TechStackText>
+     <CardBodyContainer>
+      <Title>{itemTitle}</Title>
+      <Description>{itemDescription}</Description>
+      <TechStackContainer>
+        <TechStackHeader>Tech Stack:</TechStackHeader>
+        <TechStackText>
+          <p>{itemTechStack}</p>
+        </TechStackText>
+      </TechStackContainer>
+     </CardBodyContainer>
    </CardContainer>
  );
 };

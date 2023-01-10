@@ -5,40 +5,77 @@ export const CardContainer = styled.div`
  flex-direction: column;
  align-items: center;
  justify-content: center;
- width: 18rem;
- height: 100%;
+ width: 20rem;
+ height: 20rem;
  background-color: blue;
  box-shadow: 5px 5px 8px 0 rgb(125 121 121);
  border-radius: 5px;
  padding: 2rem 1.75rem;
-
+ 
  &:hover {
   translate: 0% -5px; 
   box-shadow:5px 5px 15px 3px rgb(125 121 121);
  }
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.header`
  display: flex;
  align-items: center;
  justify-content: space-between;
  width: 100%;
+ 
+ span {
+  font-size: 30px;
+  color: white;
+  
+ }
+ 
+ a {
+  &:hover {
+  translate: 0% -5px; 
+  }
+ }
+  
+ div {
+  display: flex;
+  gap: 15px;
+ }
 `;
 
-export const Title = styled.h1`
- color: #000;
- margin: 0;
+export const CardBodyContainer = styled.div`
+ box-sizing: border-box;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ padding: 10px 10px;
+`;
+
+export const Title = styled.h3`
+ color: #fff;
+ margin: 5px 0px 10px 0px;
+ font-size: 1.5rem;
 `;
 
 export const Description = styled.p`
- color: #cccccc;
+ color: #cccc;
  margin: 0;
 `;
 
-export const TechStackText = styled.div`
- color: #cccccc;
+export const TechStackContainer = styled.div`
  display: flex;
- justify-content: space-evenly;
+ flex-direction: column;
+ width: 100%;
+ padding: 5px 5px;
+ margin-bottom: 0 10px;
+`;
+
+export const TechStackHeader = styled.h5`
+ margin: 0px;
+`;
+export const TechStackText = styled.div`
+ color: black;
+ display: flex;
+ justify-content: start;
  align-items: center;
  width: 100%;
 `;
