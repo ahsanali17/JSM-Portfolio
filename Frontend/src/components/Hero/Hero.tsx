@@ -4,20 +4,16 @@ import Image from "next/image";
 import {TypedReactAnimation} from '..';
 import { HeroProfilePic } from '../../assets';
 import { HeroMainContainer, HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextPartition } from './styles';
+import { nameString } from '../../utils/constants';
 
 function Hero() {
-  
-  const nameString = [
-    "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/><br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
-  ]
-  
   return (
     <HeroSection backgroundColor="#000ff906" fontColor="#ffffff">
       <HeroMainContainer>
-        
+
         <HeroTextPartition>
           <HeroText>
-            <TypedReactAnimation stringArray={nameString} typingSpeed={40} backingSpeed={20} animationLoop={false} 
+            <TypedReactAnimation stringArray={nameString} typingSpeed={40} backingSpeed={20} animationLoop={false}
             style={{width:"100px", color: "#ffcc", fontSize:"1.8rem"}}
             />
           </HeroText>
@@ -27,7 +23,7 @@ function Hero() {
               <Image src={HeroProfilePic} alt='My hero sections profile picture' fill style={{borderRadius: '20px', boxShadow: "5px 5px 50px #7d7979"}} />
             </HeroPictureContainer>
         </HeroPicture>
-        
+
       </HeroMainContainer>
     </HeroSection>
   );

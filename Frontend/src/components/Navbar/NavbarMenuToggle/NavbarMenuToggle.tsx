@@ -1,13 +1,12 @@
 import { Dispatch, MouseEventHandler} from "react";
 
 import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink, NavbarSocialIconLinks, SidebarSocialIconsWrapper, MobileNavbarEmailLink, MobileNavbarEmailDiv, MobileNavbarMenuToggleContainer2 } from "./styles";
-import { SidebarData } from '../../LeftSidebar/LeftSidebar';
-
+import { SidebarData } from "../../../utils/constants";
 
 interface NavbarMenuToggle {
   isOpen: boolean;
   setIsOpen: Dispatch<React.SetStateAction<boolean>>;
-  handleExit: MouseEventHandler; 
+  handleExit: MouseEventHandler;
   NavbarDataProps: {
     path: string;
     text: string;
@@ -16,7 +15,7 @@ interface NavbarMenuToggle {
 }
 
 const NavbarMenuToggle = ({isOpen, handleExit, NavbarDataProps}: NavbarMenuToggle) => {
-  
+
   return (
     <NavbarMenuToggleContainer isOpen={isOpen}>
       <MenuIcon>
@@ -34,7 +33,7 @@ const NavbarMenuToggle = ({isOpen, handleExit, NavbarDataProps}: NavbarMenuToggl
           <MobileResumeBtnLink href={'/resume'}>Resume</MobileResumeBtnLink>
         </MobileResumeBtnWrap>
       </MobileNavbarMenuWrapper>
-      
+
       <MobileNavbarMenuToggleContainer2>
       <MobileNavbarEmailDiv>
         <MobileNavbarEmailLink href="mailto:ahsantime1@gmail.com">
@@ -44,11 +43,11 @@ const NavbarMenuToggle = ({isOpen, handleExit, NavbarDataProps}: NavbarMenuToggl
       <SidebarSocialIconsWrapper>
         {SidebarData.map((item, index) => (
             <NavbarSocialIconLinks href={item.path} target="_blank" rel="noreferrer" key={index}>
-              {item.icon}
+              {<item.icon />}
             </NavbarSocialIconLinks>
         ))}
       </SidebarSocialIconsWrapper>
-        
+
       </MobileNavbarMenuToggleContainer2>
     </NavbarMenuToggleContainer>
   );
