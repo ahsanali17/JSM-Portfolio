@@ -91,7 +91,11 @@ export const BannerLinkContainer = styled.div`
 
   a {
    margin-right: 1.5rem;
-   font-size: 0.7rem;
+   font-size: 1rem;
    letter-spacing: 0.15em;
+
+   &:hover {
+    color: red;
+   }
   }
 `;
