@@ -4,6 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 import { Banner, FeaturedProjectContainer, BannerTitle, ProjectImage, ProjectImageContainer, BannerDescription, BannerUnorderedList, BannerLists, BannerLinkContainer } from './styles';
 
 import { AboutPicture } from '../../../assets/index';
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 interface IFeaturedProjectsProps {
   picture: string | StaticImageData;
@@ -32,13 +33,17 @@ const FeaturedProjects: FC<IFeaturedProjectsProps> = ({picture, projectTitle, pr
          ))}
        </BannerUnorderedList>
         <BannerLinkContainer>
+          <a href={githubRepoLink} target="_blank" rel="noreferrer">
+            <span>
+              {githubRepoLink ? <FiGithub /> : ''}
+            </span>
+          </a>
          <a href={liveSiteLink} target="_blank" rel="noreferrer">
-           Live Site
+            <span>
+              {liveSiteLink ? <FiExternalLink /> : ''}
+            </span>
          </a>
 
-        <a href={githubRepoLink} target="_blank" rel="noreferrer">
-           Github
-        </a>
         </BannerLinkContainer>
      </Banner>
 

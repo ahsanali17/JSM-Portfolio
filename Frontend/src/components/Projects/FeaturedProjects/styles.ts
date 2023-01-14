@@ -87,7 +87,7 @@ export const BannerLists = styled.li`
 `;
 
 export const BannerLinkContainer = styled.div`
-  padding-bottom: 10px;
+  padding: 10px 0px 10px 0px;
 
   a {
    margin-right: 1.5rem;
@@ -96,6 +96,10 @@ export const BannerLinkContainer = styled.div`
 
    &:hover {
     color: red;
+   }
+
+   span {
+    font-size: 1.45rem;
    }
   }
 `;
