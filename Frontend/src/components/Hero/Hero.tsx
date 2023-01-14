@@ -3,13 +3,9 @@ import React from 'react';
 import {TypedReactAnimation} from '..';
 import { HeroProfilePic } from '../../assets';
 import { HeroMainContainer, HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextPartition } from './styles';
+import { nameString } from '../../utils/constants';
 
 function Hero() {
-
-  const nameString = [
-    "Hello world, my name is Ahsan Ali Syed<br/>I'm a Software Developer from Montreal, Canada.<br/>I build ReactJS full-stack applications with modern technologies.<br/>On my free time I write smart contracts.",
-  ]
-
   return (
     <HeroSection backgroundColor="#000ff906" fontColor="#ffffff">
       <HeroMainContainer>
