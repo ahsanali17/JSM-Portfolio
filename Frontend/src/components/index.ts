@@ -11,3 +11,4 @@ export { default as TypedReactAnimation } from './TypedReactAnimation/TypedReact
 export { default as About} from './About/About'; 
 export { default as Project} from './Projects/Projects'; 
 export { default as ProjectCard} from './Projects/ProjectCard/ProjectCard'; 
+export { default as FeaturedProjects } from './Projects/FeaturedProjects/FeaturedProjects';
