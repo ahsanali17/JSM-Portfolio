@@ -40,7 +40,9 @@ export const ProjectMainContainer = styled.div`
 
 export const FeaturedProjectContainer = styled.div`
  display: flex;
+ flex-direction: column;
  align-items: center;
+ gap: 3rem;
  padding: 100px 0px;
 `;
 

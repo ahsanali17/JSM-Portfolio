@@ -1,5 +1,6 @@
 import {SiJavascript, SiSolidity, SiReact, SiNextdotjs, SiVite, SiRubyonrails,SiTypescript, SiRedux, SiMysql, SiGraphql, SiMongodb, SiJest } from 'react-icons/si';
 import {FaHardHat, FaGithub, FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa';
+import { Lyriks, Morrent } from '../assets';
 
 export const nameString = [
   "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/><br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
@@ -30,61 +31,80 @@ export const techStackData = [
  {icon: FaHardHat, iconName: 'Hardhat'},
 ]
 
-
 export const featuredProjects = [
-  {},
-  {},
-  {},
-
+  {
+    picture: Lyriks,
+    projectTitle: 'Lyriks',
+    projectDesc: 'A music application that allows users to explore their favorite artists and listen to music ',
+    projectTech: ["Next.js", "React", "Redux Toolkit", "Styled Components", "Shazam API"],
+    liveSiteLink: "https://lyriks-music-jngo27.vercel.app/home",
+    githubRepoLink: "https://github.com/ahsanali17/Lyriks",
+  },
+  {
+    picture: Morrent,
+    projectTitle: 'Morrent Car Rental',
+    projectDesc: 'Online Car booking system to allow users to rent cars',
+    projectTech: ["Typescript", "React", "Styled Components", "Express", "MongoDB", "Google OAuth 2.0", "Passport.js", "Stripe"],
+    liveSiteLink: "https://morrent-car-rental-pnkcs9dbu-ahsanali17.vercel.app/",
+    githubRepoLink: "https://github.com/ahsanali17/Morrent-Car-Rental",
+  },
+  // {
+  //   picture: '',
+  //   projectTitle: '',
+  //   projectDesc: '',
+  //   projectTech: ["", ""],
+  //   liveSiteLink: "",
+  //   githubRepoLink: "",
+  // },
  ]
 
 export const projects = [
  {
    id: 1,
-   githubCardLink: '',
-   liveSiteLink: 'https://lyriks-music-jngo27.vercel.app/home',
-   itemCardTitle: 'Lyriks',
-   itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-   itemTechStack: ["NextJS ", "React ", "Redux ", "Styled Components ", "Shazam API" ]
+   githubCardLink: 'https://github.com/ahsanali17/Rocket_Elevators_Foundation',
+   liveSiteLink: 'https://rocketelevatorslp.com/',
+   itemCardTitle: 'Rocket Elevators',
+   itemCardDescription: 'Elevator installation service website',
+   itemTechStack: ["Ruby on Rails ", "HTML ", "CSS ", "Javascript ", "Twillio ", "SendGrid ", "ZenDesk ", "IBM Watson " ]
  },
  {
    id: 2,
-   githubCardLink: '',
+   githubCardLink: 'https://github.com/ahsanali17/Rocket-Elevators-Rest-API',
    liveSiteLink: '',
-   itemCardTitle: 'Morrent',
-   itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-   itemTechStack: ["Typescript ", "React ", "Styled Components ", "ExpressJS ", "MongoDB ", "GoogleOAuth 2 ", "PassportJS ", "Stripe" ]
+   itemCardTitle: 'Rocket Elevators REST API',
+   itemCardDescription: 'Restful API created to interact with Rocket Elevators website',
+   itemTechStack: [ "ASP-NetCore " ,"C#" ]
  },
  {
    id: 3,
-   githubCardLink: '',
+   githubCardLink: 'https://github.com/ahsanali17/Rocket-Elevators-Mobile',
    liveSiteLink: '',
-   itemCardTitle: 'Rocket Elevators',
-   itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-   itemTechStack: ["Dog", "Cow"]
+   itemCardTitle: 'Rocket Elevators Mobile App',
+   itemCardDescription: 'A mobile app created for Rocket Elevator technicians',
+   itemTechStack: [ "Expo ","Javascript ", "React-Native"]
  },
- {
-   id: 4,
-   githubCardLink: '',
-   liveSiteLink: '',
-   itemCardTitle: 'Rocket Elevators',
-   itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-   itemTechStack: ["Dog", "Cow"]
- },
- {
-   id: 5,
-   githubCardLink: 'a',
-   liveSiteLink: 'a',
-   itemCardTitle: 'Rocket Elevators',
-   itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-   itemTechStack: ["Dog", "Cow"]
- },
- {
-   id: 6,
-   githubCardLink: '',
-   liveSiteLink: '',
-   itemCardTitle: 'Rocket Elevators',
-   itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
-   itemTechStack: ["Dog", "Cow"]
- }
+//  {
+//    id: 4,
+//    githubCardLink: '',
+//    liveSiteLink: '',
+//    itemCardTitle: 'Rocket Elevators',
+//    itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
+//    itemTechStack: ["Dog", "Cow"]
+//  },
+//  {
+//    id: 5,
+//    githubCardLink: 'a',
+//    liveSiteLink: 'a',
+//    itemCardTitle: 'Rocket Elevators',
+//    itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
+//    itemTechStack: ["Dog", "Cow"]
+//  },
+//  {
+//    id: 6,
+//    githubCardLink: '',
+//    liveSiteLink: '',
+//    itemCardTitle: 'Rocket Elevators',
+//    itemCardDescription: 'lroem upso aiwdbiwa dwodhwoa woadinawoid owadnwao dwuanow wdoina owdn aowddjo',
+//    itemTechStack: ["Dog", "Cow"]
+//  }
 ]
