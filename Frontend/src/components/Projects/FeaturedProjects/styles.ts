@@ -14,7 +14,7 @@ export const FeaturedProjectContainer = styled.div`
  border-radius: 5px;
 
  &:hover {
-  box-shadow:5px 5px 15px 3px rgb(125 121 121);
+  box-shadow:5px 5px 15px 3px rgb(0 128 1);
  }
 
  @media screen and (max-width: 1024px) {
