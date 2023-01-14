@@ -7,14 +7,14 @@ export const CardContainer = styled.div`
  justify-content: center;
  width: 20rem;
  height: 20rem;
- background-color: blue;
+ background-color: #118;
  box-shadow: 5px 5px 8px 0 rgb(125 121 121);
  border-radius: 5px;
  padding: 2rem 1.75rem;
- 
+
  &:hover {
-  translate: 0% -5px; 
-  box-shadow:5px 5px 15px 3px rgb(125 121 121);
+  translate: 0% -5px;
+  box-shadow:5px 5px 15px 3px rgb(0 128 0);
  }
 `;
 
@@ -23,19 +23,19 @@ export const IconContainer = styled.header`
  align-items: center;
  justify-content: space-between;
  width: 100%;
- 
+
  span {
   font-size: 30px;
   color: white;
-  
+
  }
- 
+
  a {
   &:hover {
-  translate: 0% -5px; 
+  translate: 0% -5px;
   }
  }
-  
+
  div {
   display: flex;
   gap: 15px;
@@ -72,8 +72,9 @@ export const TechStackContainer = styled.div`
 export const TechStackHeader = styled.h5`
  margin: 0px;
 `;
-export const TechStackText = styled.div`
- color: black;
+
+export const TechStackParagraph = styled.p`
+ color: #fff;
  display: flex;
  justify-content: start;
  align-items: center;

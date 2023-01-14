@@ -13,7 +13,17 @@ function Projects() {
         </div>
 
         <FeaturedProjectContainer>
-          <FeaturedProjects picture="adw" projectTitle="ddd" projectDesc="www" projectTech={["dd", "dad", "adwd"]} liveSiteLink="nn" githubRepoLink="bbb" />
+          {featuredProjects.map((item, index) => (
+            <div key={index}>
+              <FeaturedProjects
+                picture={item.picture}
+                projectTitle={item.projectTitle}
+                projectDesc={item.projectDesc}
+                projectTech={item.projectTech}
+                liveSiteLink={item.liveSiteLink}
+                githubRepoLink={item.githubRepoLink} />
+            </div>
+          ))}
         </FeaturedProjectContainer>
 
         <div>

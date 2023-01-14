@@ -1,12 +1,12 @@
 import {FC} from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
-import { Banner, BannerContainer1, FeaturedProjectContainer, BannerTitle, ProjectImage, ProjectImageContainer, BannerDescription, BannerUnorderedList, BannerLists, BannerLinkContainer } from './styles';
+import { Banner, FeaturedProjectContainer, BannerTitle, ProjectImage, ProjectImageContainer, BannerDescription, BannerUnorderedList, BannerLists, BannerLinkContainer } from './styles';
 
 import { AboutPicture } from '../../../assets/index';
 
 interface IFeaturedProjectsProps {
-  picture: string;
+  picture: string | StaticImageData;
   projectTitle: string;
   projectDesc: string;
   projectTech: string[];
@@ -20,7 +20,7 @@ const FeaturedProjects: FC<IFeaturedProjectsProps> = ({picture, projectTitle, pr
     <FeaturedProjectContainer>
 
      <ProjectImageContainer>
-      <ProjectImage src={AboutPicture} alt="dwad" width={250} height={200} />
+      <ProjectImage src={picture} alt="images for each project" width={250} height={200} />
      </ProjectImageContainer>
 
      <Banner>
@@ -32,11 +32,11 @@ const FeaturedProjects: FC<IFeaturedProjectsProps> = ({picture, projectTitle, pr
          ))}
        </BannerUnorderedList>
         <BannerLinkContainer>
-         <a href={liveSiteLink}>
+         <a href={liveSiteLink} target="_blank" rel="noreferrer">
            Live Site
          </a>
 
-        <a href={githubRepoLink}>
+        <a href={githubRepoLink} target="_blank" rel="noreferrer">
            Github
         </a>
         </BannerLinkContainer>
