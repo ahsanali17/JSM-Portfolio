@@ -9,13 +9,17 @@ type LayoutProps = {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Fragment>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <LeftSidebar/>
+        <RightSidebar/>
+        
+        {children}
+        <Footer />
+      </main>
 
-      <LeftSidebar/>
-      <RightSidebar/>
-      
-      {children}
-      <Footer />
     </Fragment>
   )
 }

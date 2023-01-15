@@ -93,15 +93,19 @@ export const NavItemLink = styled(LinkS)`
  }
 `;
 
-export const NavResumeButton = styled.nav`
+export const NavResumeButton = styled.button`
  display: flex;
  align-items: center;
+ background-color: transparent;
+ border: none;
+ font-family: monospace;
+ 
  @media screen and (max-width: 768px) {
   display: none;
  }
 `;
 
-export const NavResumeBtnLink = styled(Link)`
+export const NavResumeBtnLink = styled.a`
   border-radius: 50px;
   background: #f343;
   white-space: nowrap;
