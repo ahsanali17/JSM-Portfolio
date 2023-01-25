@@ -6,7 +6,7 @@ import { projects, featuredProjects } from '../../utils/constants';
 
 function Projects() {
   return (
-    <ProjectSectionContainer>
+    <ProjectSectionContainer id="#Projects">
       <ProjectMainContainer>
         <div>
           <h1>Featured Projects</h1>
