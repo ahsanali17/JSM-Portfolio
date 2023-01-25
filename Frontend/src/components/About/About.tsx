@@ -1,7 +1,7 @@
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional for styling
 
-import {AboutSection, AboutMeTextAndPicture, AboutSectionPictureWrapper, AboutSectionPicture, AboutMeTextWrapper, AboutMeText, TechnologyStack, TechnologyStackHeader, TechnologyStackIconContainer, TechnologyStackIcons, AboutMainContainer} from './styles';
+import {AboutSection, AboutMeTextAndPicture, AboutMeTextWrapper, AboutMeText, TechnologyStack, TechnologyStackHeader, TechnologyStackIconContainer, TechnologyStackIcons, AboutMainContainer} from './styles';
 import '../../../styles/Home.module.css';
 import { AboutPicture } from '../../assets';
 import { techStackData } from '../../utils/constants';
@@ -11,9 +11,6 @@ function About() {
     <AboutSection className='#About' backgroundColor='black' fontColor='white'>
       <AboutMainContainer>
         <AboutMeTextAndPicture>
-          {/* <AboutSectionPictureWrapper>
-            <AboutSectionPicture src={AboutPicture} alt='My About Section picture' />
-          </AboutSectionPictureWrapper> */}
 
           <AboutMeTextWrapper>
             <AboutMeText>
