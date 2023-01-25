@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import Image, { StaticImageData } from 'next/image';
 
-import { Banner, FeaturedProjectContainer, BannerTitle, ProjectImage, ProjectImageContainer, BannerDescription, BannerUnorderedList, BannerLists, BannerLinkContainer } from './styles';
+import { Banner, FeaturedProjectContainer, BannerTitle, ProjectImage, BannerDescription, BannerUnorderedList, BannerLists, BannerLinkContainer } from './styles';
 
 import { AboutPicture } from '../../../assets/index';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
