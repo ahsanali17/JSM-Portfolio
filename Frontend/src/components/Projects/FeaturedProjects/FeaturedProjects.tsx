@@ -20,9 +20,7 @@ const FeaturedProjects: FC<IFeaturedProjectsProps> = ({picture, projectTitle, pr
  return (
     <FeaturedProjectContainer>
 
-     <ProjectImageContainer>
-      <ProjectImage src={picture} alt="images for each project" width={250} height={200} />
-     </ProjectImageContainer>
+      <ProjectImage src={picture} alt="images for each project" />
 
      <Banner>
        <BannerTitle>{projectTitle}</BannerTitle>

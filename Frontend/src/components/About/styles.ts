@@ -24,13 +24,13 @@ export const AboutMainContainer = styled.div`
  flex-direction: column;
  margin-top: 2.5rem;
  /* padding: 0 10rem; */
- 
+
  @media screen and (max-width: 375px) {
   flex-direction: column;
   width: 100%;
   padding: 20px 0;
  }
- 
+
  @media screen and (max-width: 360px) {
   flex-direction: column;
   width: 100%;
@@ -46,21 +46,21 @@ export const AboutMeTextAndPicture = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  
+
   @media screen and (max-width: 2560px) {
     flex-direction: row;
     padding: 0px 100px;
   }
-  
+
   @media screen and (max-width: 1440px) {
     padding: 0px 100px;
   }
-  
+
   @media screen and (max-width: 1024px) {
     flex-direction: column-reverse;
     padding: 0px 80px;
   }
-  
+
   @media screen and (max-width: 768px) {
     padding: 0px 70px;
   }
@@ -68,42 +68,42 @@ export const AboutMeTextAndPicture = styled.div`
   @media screen and (max-width: 425px) {
     padding: 0px 10px;
   }
-  
+
   @media screen and (max-width: 375px) {
     padding: 0px 0px;
   }
 
 `;
 
-export const AboutSectionPictureWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40px;
-  
-  @media screen and (max-width:768px) {
-    margin-left: 0px;
-  }
-`;
+// export const AboutSectionPictureWrapper = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-left: 40px;
 
-export const AboutSectionPicture = styled(Image)`
-  width: 350px;
-  height: 350px;
-  border-radius: 8%;
-  
-  @media screen and (max-width: 425px) {
-    width: 18rem;
-    height: 15rem;
-  }
+//   @media screen and (max-width:768px) {
+//     margin-left: 0px;
+//   }
+// `;
 
-`;
+// export const AboutSectionPicture = styled(Image)`
+//   width: 350px;
+//   height: 350px;
+//   border-radius: 8%;
+
+//   @media screen and (max-width: 425px) {
+//     width: 18rem;
+//     height: 15rem;
+//   }
+
+// `;
 
 export const AboutMeTextWrapper = styled.div``;
 
 export const AboutMeText = styled.p`
   padding: 0px 100px;
   font-size: xx-large;
-  
+
 `;
 
 export const TechnologyStack = styled.div`
@@ -128,7 +128,7 @@ export const TechnologyStackIconContainer = styled.div`
   grid-gap: 30px;
   gap: 30px;
   justify-content: center;
-  
+
   @media only screen and (max-width: 1000px) {
     flex-wrap: wrap;
   }
@@ -141,5 +141,5 @@ export const TechnologyStackIcons = styled.a`
   &:hover {
     color: green;
   }
-  
+
 `;

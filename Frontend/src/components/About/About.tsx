@@ -11,13 +11,13 @@ function About() {
     <AboutSection className='#About' backgroundColor='black' fontColor='white'>
       <AboutMainContainer>
         <AboutMeTextAndPicture>
-          <AboutSectionPictureWrapper>
+          {/* <AboutSectionPictureWrapper>
             <AboutSectionPicture src={AboutPicture} alt='My About Section picture' />
-          </AboutSectionPictureWrapper>
+          </AboutSectionPictureWrapper> */}
 
           <AboutMeTextWrapper>
             <AboutMeText>
-              I started my journey in software engineering back in 2019 doing tutorials on Udemy.<br/><br/>After getting more serious about it I decided to commit fully and jump into a bootcamp to begin learning full stack development. <br/><br/>I got hired and began working as a trainee Full stack developer (React, Ruby on Rails, GraphQl). Since then I have continued my journey, currently I am exploring the world of Typescript and aiming to become a smart contract developer.
+              I started my journey in software engineering back in 2019. After getting more serious about it I decided to commit fully and jump into a bootcamp to begin learning full stack development. <br/><br/>I got hired and began working as a trainee Full stack developer (React, Ruby on Rails, GraphQl). Since then I have continued my journey, currently I am exploring the world of Typescript and aiming to become a smart contract developer.
             </AboutMeText>
           </AboutMeTextWrapper>
         </AboutMeTextAndPicture>

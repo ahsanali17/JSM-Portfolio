@@ -7,10 +7,10 @@ export const FeaturedProjectContainer = styled.div`
  flex-direction: column;
  align-items: center;
  justify-content: space-between;
- width: 60rem;
- height: 30rem;
+ width: 65rem;
+ height: 35rem;
  background-color: blue;
- box-shadow: 5px 5px 8px 0 rgb(125 121 121);
+ box-shadow: 5px 5px 8px 5px rgb(125 121 121);
  border-radius: 5px;
 
  &:hover {
@@ -32,20 +32,15 @@ export const FeaturedProjectContainer = styled.div`
 
 `;
 
-export const ProjectImageContainer = styled.div`
-  display: block;
-  width: 100%;
-  height: 100%;
-`;
 
 export const ProjectImage = styled(Image)`
-
-  display: block;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   opacity: 0.8;
   filter: brightness(45%) grayscale(1);
-  transition: filter 1000ms;
+  transition: filter 2000ms;
 
   &:hover {
    filter: brightness(100%) grayscale(0);
