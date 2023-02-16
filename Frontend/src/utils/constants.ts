@@ -113,7 +113,7 @@ export const projects = [
    liveSiteLink: 'https://bafybeigxenewq2sabmcy46fuvbko5dwk2aqwbdpsez5dkdwv2dplsdscby.ipfs.dweb.link/new',
    itemCardTitle: 'Decentralized Ticket Platform',
    itemCardDescription: 'Dapp for creating entertainment event and the tickets are created as NFTs',
-   itemTechStack: [ "React ", "ChakraUI ", "NFTStorage ", "IPFS Client ", "Axios ", "Hardhat ", "Tableland"]
+   itemTechStack: [ "React ", "ChakraUI ", "NftStorage ", "IPFSClient ", "Axios ", "Hardhat ", "Tableland"]
  },
 //  {
 //    id: 4,
