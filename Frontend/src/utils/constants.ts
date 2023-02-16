@@ -1,6 +1,6 @@
 import {SiJavascript, SiSolidity, SiReact, SiNextdotjs, SiVite, SiRubyonrails,SiTypescript, SiRedux, SiMysql, SiGraphql, SiMongodb, SiJest } from 'react-icons/si';
 import {FaHardHat, FaGithub, FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa';
-import { Lyriks, Morrent } from '../assets';
+import { Lyriks, Morrent, Filmpire } from '../assets';
 
 export const nameString = [
   "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/><br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
@@ -41,13 +41,21 @@ export const featuredProjects = [
     githubRepoLink: "https://github.com/ahsanali17/Lyriks",
   },
   {
-    picture: Morrent,
-    projectTitle: 'Morrent Car Rental',
-    projectDesc: 'Online Car booking system to allow users to rent cars',
-    projectTech: ["Typescript", "React", "Styled Components", "Express", "MongoDB", "Google OAuth 2.0", "Passport.js", "Stripe"],
+    picture: Filmpire,
+    projectTitle: 'Filmpire',
+    projectDesc: 'Movie application that shows users the latest playing movie',
+    projectTech: ["React", "Redux", "Redux Toolkit", "Material UI", "Axios"],
     liveSiteLink: "https://morrent-car-rental-pnkcs9dbu-ahsanali17.vercel.app/",
     githubRepoLink: "https://github.com/ahsanali17/Morrent-Car-Rental",
   },
+  // {
+  //   picture: Morrent,
+  //   projectTitle: 'Morrent Car Rental',
+  //   projectDesc: 'Online Car booking system to allow users to rent cars',
+  //   projectTech: ["Typescript", "React", "Styled Components", "Express", "MongoDB", "Google OAuth 2.0", "Passport.js", "Stripe"],
+  //   liveSiteLink: "https://morrent-car-rental-pnkcs9dbu-ahsanali17.vercel.app/",
+  //   githubRepoLink: "https://github.com/ahsanali17/Morrent-Car-Rental",
+  // },
   // {
   //   picture: '',
   //   projectTitle: '',
@@ -82,6 +90,30 @@ export const projects = [
    itemCardTitle: 'Rocket Elevators Mobile App',
    itemCardDescription: 'A mobile app created for Rocket Elevator technicians',
    itemTechStack: [ "Expo ","Javascript ", "React-Native"]
+ },
+ {
+   id: 4,
+   githubCardLink: 'https://github.com/ahsanali17/weather-app-and-palindrome-assignment',
+   liveSiteLink: 'https://weather-app-and-palindrome-assignment.vercel.app/',
+   itemCardTitle: 'Weather App and Palindrome Checker',
+   itemCardDescription: 'Basic app that retrieves specified city weather',
+   itemTechStack: [ "Vite", "ReactTS", "Redux", "Redux Toolkit", "ChakraUI", ]
+ },
+ {
+   id: 5,
+   githubCardLink: 'https://github.com/ahsanali17/FVM',
+   liveSiteLink: 'https://fvm-storage-bounty.vercel.app/',
+   itemCardTitle: 'FVM Storage Bounty',
+   itemCardDescription: 'Dapp for creating storage bounties, interact with contract deployed to FEVM',
+   itemTechStack: [ "NextJS", "Typescript", "ChakraUI", "Wagmi", "Moralisweb3", "Huddle", "PushProtocol", "Zondax"]
+ },
+ {
+   id: 6,
+   githubCardLink: 'https://github.com/ahsanali17/decentralized-ticket-platform',
+   liveSiteLink: 'https://bafybeigxenewq2sabmcy46fuvbko5dwk2aqwbdpsez5dkdwv2dplsdscby.ipfs.dweb.link/new',
+   itemCardTitle: 'Decentralized Ticket Platform',
+   itemCardDescription: 'Dapp for creating entertainment event and the tickets are created as NFTs',
+   itemTechStack: [ "React", "ChakraUI", "NFTStorage", "IPFS Client", "Axios", "Hardhat", "Tableland"]
  },
 //  {
 //    id: 4,
