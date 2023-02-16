@@ -97,7 +97,7 @@ export const projects = [
    liveSiteLink: 'https://weather-app-and-palindrome-assignment.vercel.app/',
    itemCardTitle: 'Weather App and Palindrome Checker',
    itemCardDescription: 'Basic app that retrieves specified city weather',
-   itemTechStack: [ "Vite", "ReactTS", "Redux", "Redux Toolkit", "ChakraUI", ]
+   itemTechStack: [ "Vite ", "ReactTS ", "Redux ", "Redux Toolkit ", "ChakraUI", ]
  },
  {
    id: 5,
@@ -105,7 +105,7 @@ export const projects = [
    liveSiteLink: 'https://fvm-storage-bounty.vercel.app/',
    itemCardTitle: 'FVM Storage Bounty',
    itemCardDescription: 'Dapp for creating storage bounties, interact with contract deployed to FEVM',
-   itemTechStack: [ "NextJS", "Typescript", "ChakraUI", "Wagmi", "Moralisweb3", "Huddle", "PushProtocol", "Zondax"]
+   itemTechStack: [ "NextJS ", "Typescript ", "ChakraUI ", "Wagmi ", "Moralisweb3 ", "Huddle ", "PushProtocol ", "Zondax"]
  },
  {
    id: 6,
@@ -113,7 +113,7 @@ export const projects = [
    liveSiteLink: 'https://bafybeigxenewq2sabmcy46fuvbko5dwk2aqwbdpsez5dkdwv2dplsdscby.ipfs.dweb.link/new',
    itemCardTitle: 'Decentralized Ticket Platform',
    itemCardDescription: 'Dapp for creating entertainment event and the tickets are created as NFTs',
-   itemTechStack: [ "React", "ChakraUI", "NFTStorage", "IPFS Client", "Axios", "Hardhat", "Tableland"]
+   itemTechStack: [ "React ", "ChakraUI ", "NFTStorage ", "IPFS Client ", "Axios ", "Hardhat ", "Tableland"]
  },
 //  {
 //    id: 4,
