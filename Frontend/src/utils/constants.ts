@@ -45,8 +45,8 @@ export const featuredProjects = [
     projectTitle: 'Filmpire',
     projectDesc: 'Movie application that shows users the latest playing movie',
     projectTech: ["React", "Redux", "Redux Toolkit", "Material UI", "Axios"],
-    liveSiteLink: "https://morrent-car-rental-pnkcs9dbu-ahsanali17.vercel.app/",
-    githubRepoLink: "https://github.com/ahsanali17/Morrent-Car-Rental",
+    liveSiteLink: "https://filmpire-jsm-git-main-ahsanali17.vercel.app/",
+    githubRepoLink: "https://github.com/ahsanali17/filmpire_jsm",
   },
   // {
   //   picture: Morrent,
