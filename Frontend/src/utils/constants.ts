@@ -1,6 +1,6 @@
 import {SiJavascript, SiSolidity, SiReact, SiNextdotjs, SiVite, SiRubyonrails,SiTypescript, SiRedux, SiMysql, SiGraphql, SiMongodb, SiJest } from 'react-icons/si';
 import {FaHardHat, FaGithub, FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa';
-import { Lyriks, Morrent, Filmpire } from '../assets';
+import { Lyriks, Filmpire, NiftyMarketplace } from '../assets';
 
 export const nameString = [
   "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/><br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
@@ -47,6 +47,14 @@ export const featuredProjects = [
     projectTech: ["React", "Redux", "Redux Toolkit", "Material UI", "Axios"],
     liveSiteLink: "https://filmpire-jsm-git-main-ahsanali17.vercel.app/",
     githubRepoLink: "https://github.com/ahsanali17/filmpire_jsm",
+  },
+  {
+    picture: NiftyMarketplace,
+    projectTitle: 'NFT Marketplace',
+    projectDesc: 'NFT marketplace built with React to let users upload their own nft and buy them',
+    projectTech: ["Typescript", "TailwindCSS", "Wagmi", "Moralis", "IPFS"],
+    liveSiteLink: "https://nft-marketplace-eb232bhn8-ahsanali17.vercel.app/",
+    githubRepoLink: "https://github.com/ahsanali17/nft_marketplace/",
   },
   // {
   //   picture: Morrent,
