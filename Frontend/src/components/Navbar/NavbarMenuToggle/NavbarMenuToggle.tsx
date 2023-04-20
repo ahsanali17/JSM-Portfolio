@@ -30,7 +30,7 @@ const NavbarMenuToggle = ({isOpen, handleExit, NavbarDataProps}: NavbarMenuToggl
           </MobileNavbarMenu>
         ))}
         <MobileResumeBtnWrap>
-          <MobileResumeBtnLink href={'/resume'}>Resume</MobileResumeBtnLink>
+          <MobileResumeBtnLink href="https://drive.google.com/file/d/1JNBJT-oszA5Mfrcj2hVXy8_KoijTrpxL/view?usp=drivesdk" target="_blank">Resume</MobileResumeBtnLink>
         </MobileResumeBtnWrap>
       </MobileNavbarMenuWrapper>
 
