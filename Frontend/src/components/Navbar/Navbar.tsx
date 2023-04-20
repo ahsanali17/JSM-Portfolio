@@ -46,7 +46,7 @@ const Navbar: FC = () => {
       </NavMenu>
       
       <NavResumeButton>
-      <NavResumeBtnLink href="https://drive.google.com/file/d/1kdj5oP6Ha5YuVnj3gMW4NLxz4SKdXZQo/view?usp=sharing" target="_blank">Resume</NavResumeBtnLink>
+      <NavResumeBtnLink href="https://docs.google.com/file/d/11VhupOx-k5kp3Yg_cjLwLNuLdlZ3M_JI/edit?usp=docslist_api&filetype=msword" target="_blank">Resume</NavResumeBtnLink>
       </NavResumeButton>
     </NavMenuContainer>
     
