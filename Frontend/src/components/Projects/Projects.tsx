@@ -1,16 +1,16 @@
 import React from 'react'
 
 import { FeaturedProjects, ProjectCard } from '../index';
-import { ProjectMainContainer, ProjectSectionContainer, FeaturedProjectContainer, OtherProjectsContainer } from './styles';
+import { ProjectMainContainer, ProjectSectionContainer, TitleDiv, FeaturedProjectContainer, OtherProjectsContainer } from './styles';
 import { projects, featuredProjects } from '../../utils/constants';
 
 function Projects() {
   return (
     <ProjectSectionContainer id="#Projects">
       <ProjectMainContainer>
-        <div>
+        <TitleDiv>
           <h1>Featured Projects</h1>
-        </div>
+        </TitleDiv>
 
         <FeaturedProjectContainer>
           {featuredProjects.map((item, index) => (
@@ -26,9 +26,9 @@ function Projects() {
           ))}
         </FeaturedProjectContainer>
 
-        <div>
+        <TitleDiv>
           <h1>Other Projects</h1>
-        </div>
+        </TitleDiv>
 
         <OtherProjectsContainer>
           {projects.map((item, index) => (

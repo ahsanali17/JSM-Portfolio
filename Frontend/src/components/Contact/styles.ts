@@ -10,7 +10,7 @@ export const ContactSectionContainer = styled.section`
   justify-content: center;
   margin: 40px;
   min-height: 100vh;
-  width: 100%;
+  /* width: 100%; */
 `;
 
 export const ContactMainDiv = styled.div`
@@ -20,13 +20,13 @@ export const ContactMainDiv = styled.div`
  flex-direction: column;
  margin-top: 2.5rem;
  padding: 0 10rem;
- 
+
  @media screen and (max-width: 375px) {
   flex-direction: column;
   width: 100%;
   padding: 20px 0;
  }
- 
+
  @media screen and (max-width: 360px) {
   flex-direction: column;
   width: 100%;
@@ -54,11 +54,11 @@ export const ContactArticleH1 = styled.h1`
  max-width: unset;
  opacity: 1;
  transform: translate3d(0,0,0);
- 
+
  @media screen and (max-width: 375px) {
   font-size: 1.8rem;
  }
- 
+
  @media screen and (max-width: 360px) {
   font-size: 1.63rem;
  }
@@ -73,11 +73,11 @@ export const ContactArticleP = styled.p`
  margin-top: 15px;
  opacity: 1;
  transform: translate3d(0,0,0);
- 
+
  @media screen and (max-width: 375px) {
   font-size: 1.8rem;
  }
- 
+
  @media screen and (max-width: 360px) {
   font-size: 1.5rem;
  }
@@ -92,7 +92,7 @@ export const ContactForm = styled.form`
  @media screen and (max-width: 375px) {
   width: 100%;
  }
- 
+
  @media screen and (max-width: 360px) {
   width: 100%;
  }
@@ -104,7 +104,7 @@ export const ContactFormRow1 = styled.div`
  margin-bottom: 3rem;
  position: relative;
  width: 100%;
- 
+
  @media screen and (max-width: 767px) {
   flex-direction: column;
   justify-content: center;
@@ -123,11 +123,11 @@ export const ContactFormInputGroup = styled.div`
  display: flex;
  flex-direction: column;
  position: relative;
- 
+
  &:not(:last-child) {margin-right: 20px};
- 
+
  color: rgba(61, 21, 95, 0.5);
- 
+
  @media screen and (max-width: 700px) {
   width: 100%;
  }
@@ -139,15 +139,15 @@ export const ContactFormInputLabel = styled.label`
  font-size: 1.6rem;
  font-weight: 200;
  margin-bottom: 5px;
- 
+
  &::before, ::after {
   box-sizing: border-box;
  }
- 
+
  &:hover {
   color: green;
  }
- 
+
  @media screen and (max-width: 767px) {
   width: 100%;
   line-height: 5rem;
@@ -158,9 +158,9 @@ export const ContactFormInputLabel = styled.label`
   line-height: 4rem;
   font-size: 1.2rem;
  }
- 
+
 `;
- 
+
 export const ContactFormInputs = styled.input`
  background: transparent;
  border: 0;
@@ -170,11 +170,11 @@ export const ContactFormInputs = styled.input`
  padding-left: 0;
  position: relative;
  font-size: 1.25rem;
- 
+
  &:focus-within {
   color: white;
  }
-`; 
+`;
 
 export const ContactFormTextArea = styled.textarea`
  background: transparent;
@@ -189,7 +189,7 @@ export const ContactFormTextArea = styled.textarea`
  position: relative;
  resize: none;
  -webkit-tap-highlight-color: transparent;
- 
+
  &:focus-within {
   color: white;
  }
@@ -232,7 +232,7 @@ export const ContactFormButtonDiv = styled.div`
  width: 100%;
  color: grey;
  border: 1px solid green;
- 
+
  &:hover{
   color: white;
  }

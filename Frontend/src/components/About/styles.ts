@@ -14,8 +14,7 @@ export const AboutSection = styled.section<AboutProps>`
   justify-content: center;
   margin: 40px;
   min-height: 94vh;
-  width:100%;
-
+  /* width:100%; */
 `;
 
 export const AboutMainContainer = styled.div`
@@ -23,7 +22,7 @@ export const AboutMainContainer = styled.div`
  display: flex;
  flex-direction: column;
  margin-top: 2.5rem;
- /* padding: 0 10rem; */
+ padding: 0 10rem;
 
  @media screen and (max-width: 375px) {
   flex-direction: column;

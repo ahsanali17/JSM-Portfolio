@@ -10,7 +10,7 @@ export const ProjectSectionContainer = styled.section`
  justify-content: center;
  margin: 40px;
  min-height: 100vh;
- width: 100%;
+ /* width: 100%; */
 `;
 
 export const ProjectMainContainer = styled.div`
@@ -21,6 +21,11 @@ export const ProjectMainContainer = styled.div`
  margin-top: 2.5rem;
  padding: 0 10rem;
  color: white;
+
+ @media screen and (max-width: 500px) {
+  flex-direction: column;
+  padding: 20px 100px;
+ }
 
  @media screen and (max-width: 425px) {
   flex-direction: column;
@@ -43,15 +48,13 @@ export const FeaturedProjectContainer = styled.div`
  flex-direction: column;
  align-items: center;
  gap: 250px;
- padding: 100px 0px;
+ /* padding: 100px 0px; */
 `;
 
 export const OtherProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
-  padding-top: 10%;
-
 
   @media screen and (max-width: 1100px) {
    grid-template-columns: auto auto;
@@ -77,4 +80,10 @@ export const OtherProjectsContainer = styled.div`
    display: flex;
    flex-direction: column;
   }
+`;
+
+export const TitleDiv = styled.div`
+  display: flex;
+  padding-top: 20%;
+  padding-bottom: 10%;
 `;
