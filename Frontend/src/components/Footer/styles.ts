@@ -16,11 +16,11 @@ export const Foot = styled.div`
  justify-content: space-evenly;
 `;
 
-export const FooterText = styled(Link)`
+export const FooterText = styled.link`
  font-size: medium;
  font-family: Arial, Helvetica, sans-serif;
  text-decoration: none;
- 
+
  &:hover {
   color: red;
  }
