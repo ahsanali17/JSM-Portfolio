@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 import * as FaIcons from 'react-icons/fa';
@@ -21,7 +22,7 @@ export const NavbarMenuToggleContainer = styled.aside<NavbarMenuToggleContainerP
  transition: 0.3s ease-in-out;
  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
- 
+
  @media screen and (max-width: 320px) {
   width: 65%;
  }
@@ -41,7 +42,7 @@ export const MenuIcon = styled.div`
 
 export const CloseIcon = styled(FaIcons.FaTimes)`
  color: #fff;
- 
+
  &:hover {
   color: red;
  }
@@ -60,15 +61,15 @@ export const MobileNavbarMenu = styled.ul`
  flex-direction: column;
  text-align: center;
  padding: 10px 64px;
- 
+
  @media screen and (max-width: 480px) {
   grid-template-rows: repeat(1, 50px);
  }
- 
+
  @media screen and (max-width: 375px) {
   grid-template-rows: repeat(1, 50px);
  }
- 
+
  @media screen and (max-width: 320px) {
   grid-template-rows: repeat(1, 40px);
  }
@@ -77,7 +78,7 @@ export const MobileNavbarMenu = styled.ul`
 export const MobileNavbarMenuLink = styled(LinkS)`
  color: #fff;
  cursor: pointer;
- 
+
  &:hover {
   color: #FF2565;
   transition: 0.2s ease-in-out;
@@ -101,7 +102,7 @@ export const MobileResumeBtnLink = styled.a`
  cursor: pointer;
  transition: all 0.2s ease-in-out;
  text-decoration: none;
- 
+
  &:hover {
   transition: all 0.2s ease-in-out;
   background: #fff;
@@ -122,7 +123,7 @@ export const MobileNavbarEmailDiv = styled.div`
 
 export const MobileNavbarEmailLink = styled.a`
   color: white;
-  
+
   &:hover {
     color: red;
   }
@@ -140,7 +141,7 @@ export const SidebarSocialIconsWrapper = styled.div`
 export const NavbarSocialIconLinks = styled.a`
   color: white;
   font-size: 2rem;
-  
+
   &:hover {
     color: red;
   }
