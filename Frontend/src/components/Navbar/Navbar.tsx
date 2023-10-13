@@ -34,7 +34,7 @@ const Navbar: FC = () => {
             setIsOpen={setIsOpen}
           />
         )}
-
+        
         <NavMenuContainer>
           <NavMenu>
             {NavbarData.map((item, index: number) => (
