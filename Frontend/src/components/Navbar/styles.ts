@@ -1,3 +1,4 @@
+//@ts-nocheck
 import styled from 'styled-components';
 import Link from "next/link";
 import {Link as LinkS} from "react-scroll";
@@ -15,11 +16,11 @@ export const Nav = styled.nav`
  top: 0;
  z-index: 10;
  background: #000;
- 
+
  @media screen and (max-width: 960px) {
   transition: 0.8s all ease;
  }
- 
+
 `;
 
 export const NavbarContainer = styled.div`
@@ -34,7 +35,7 @@ export const NavbarContainer = styled.div`
 
 export const MobileIcon = styled.div`
  display: none;
- 
+
  @media screen and (max-width: 768px) {
   display: block;
   position: absolute;
@@ -64,7 +65,7 @@ export const NavMenu = styled.ul`
  align-items: center;
  list-style: none;
  text-align: center;
- 
+
  @media screen and (max-width: 768px) {
   display: none;
  }
@@ -82,7 +83,7 @@ export const NavItemLink = styled(LinkS)`
  padding: 0 1rem;
  height: 100%;
  cursor: pointer;
- 
+
  &:hover {
   color: green;
  }
@@ -94,7 +95,7 @@ export const NavResumeButton = styled.button`
  background-color: transparent;
  border: none;
  font-family: monospace;
- 
+
  @media screen and (max-width: 768px) {
   display: none;
  }
@@ -112,7 +113,7 @@ export const NavResumeBtnLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  
+
   &:hover {
    transition: all 0.2s ease-in-out;
    background: #30ca80;

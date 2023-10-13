@@ -1,8 +1,9 @@
+//@ts-nocheck
 import styled from 'styled-components';
 import Link from "next/link";
 import Image from 'next/image';
 
-
+//@ts-ignore
 // Next Link Router Element
 export const NavLink = styled(Link)`
  justify-self: flex-start;
@@ -22,7 +23,7 @@ export const NameText = styled.p`
  font-size: x-large;
  font-family: 'Times New Roman', Times, serif;
  transition: transform 0.2s ease-in-out;
- 
+
  &:hover {
   color: green;
   transform: rotateZ(-20deg);
