@@ -1,48 +1,57 @@
 import { FC, useState, MouseEventHandler } from "react";
+import * as FaIcons from 'react-icons/fa';
 
-import {NavbarLogo, NavbarData, NavbarMenuToggle} from '../';
-import { Nav, NavbarContainer, MobileIcon, NavMenuContainer, NavMenu,NavItem,NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
+import { NavbarLogo, NavbarMenuToggle } from '../';
+import { Nav, NavbarContainer, MobileIcon, NavMenuContainer, NavMenu, NavItem, NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
 
 const Navbar: FC = () => {
- const [isOpen, setIsOpen] = useState<boolean>(false);
- 
- const handleClick: MouseEventHandler<SVGElement> = (event) => {
-  setIsOpen(!isOpen);
-}
- 
- return (
-  <Nav>
-   <NavbarContainer>
-    <NavbarLogo />
-    
-    <MobileIcon>
-     <HamburgerIcon onClick={handleClick} />
-    </MobileIcon>
-    
-    {isOpen && (
-     <NavbarMenuToggle
-       isOpen={isOpen}
-       handleExit={handleClick}
-     />
-    )}
-    
-    <NavMenuContainer>
-      <NavMenu>
-        {NavbarData.map((item, index: number) => (
-          <NavItem key={index}>
-            <NavItemLink to={item.path}>{item.text}</NavItemLink>
-          </NavItem>
-          ) 
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setIsOpen(prev => !prev);
+  }
+
+  const NavbarData = [
+    { path: '#About', text: 'About', icon: <FaIcons.FaHome /> },
+    { path: '#Projects', text: 'Projects', icon: <FaIcons.FaAddressCard /> },
+    { path: '#Contact', text: 'Contact', icon: <FaIcons.FaAddressBook /> },
+  ]
+
+  return (
+    <Nav>
+      <NavbarContainer>
+        <NavbarLogo />
+
+        <MobileIcon>
+          <HamburgerIcon onClick={handleClick} />
+        </MobileIcon>
+
+        {isOpen && (
+          <NavbarMenuToggle
+            isOpen={isOpen}
+            handleExit={handleClick}
+            NavbarDataProps={NavbarData}
+            setIsOpen={setIsOpen}
+          />
         )}
-      </NavMenu>
-      
-      <NavResumeButton>
-      <NavResumeBtnLink href="/https://docs.google.com/file/d/11VhupOx-k5kp3Yg_cjLwLNuLdlZ3M_JI/edit?usp=docslist_api&filetype=msword">Resume</NavResumeBtnLink>
-      </NavResumeButton>
-    </NavMenuContainer>
-    
-   </NavbarContainer>
-  </Nav>
- )
+        
+        <NavMenuContainer>
+          <NavMenu>
+            {NavbarData.map((item, index: number) => (
+              <NavItem key={index}>
+                <NavItemLink to={item.path}>{item.text}</NavItemLink>
+              </NavItem>
+            )
+            )}
+          </NavMenu>
+
+          <NavResumeButton>
+            <NavResumeBtnLink href="https://docs.google.com/document/d/1V5Kpa0RJEEI5g1G_Cem-yUIVPmbyLLbIHqql4f1dnMI/edit?usp=sharing" target="_blank">Resume</NavResumeBtnLink>
+          </NavResumeButton>
+        </NavMenuContainer>
+
+      </NavbarContainer>
+    </Nav>
+  )
 }
 export default Navbar;

@@ -1,4 +1,4 @@
-import React from 'react';
+//@ts-nocheck
 import styled from 'styled-components';
 import Link from "next/link";
 import {Link as LinkS} from "react-scroll";
@@ -15,12 +15,12 @@ export const Nav = styled.nav`
  position: sticky;
  top: 0;
  z-index: 10;
- background: #fff;
- 
+ background: #000;
+
  @media screen and (max-width: 960px) {
   transition: 0.8s all ease;
  }
- 
+
 `;
 
 export const NavbarContainer = styled.div`
@@ -35,7 +35,7 @@ export const NavbarContainer = styled.div`
 
 export const MobileIcon = styled.div`
  display: none;
- 
+
  @media screen and (max-width: 768px) {
   display: block;
   position: absolute;
@@ -44,14 +44,14 @@ export const MobileIcon = styled.div`
   transform: translate(-100%, 60%);
   font-size: 1.8rem;
   cursor: pointer;
-  color: #000;
+  color: #fff;
  }
 `;
 
 export const HamburgerIcon = styled(FaIcons.FaBars)`
   transition: all 0.8s all ease;
   &:hover {
-    color: blue;
+    color: green;
   }
 `;
 
@@ -65,7 +65,7 @@ export const NavMenu = styled.ul`
  align-items: center;
  list-style: none;
  text-align: center;
- 
+
  @media screen and (max-width: 768px) {
   display: none;
  }
@@ -76,47 +76,47 @@ export const NavItem = styled.li`
 `;
 
 export const NavItemLink = styled(LinkS)`
- color: #000;
+ color: #fff;
  display: flex;
  align-items: center;
  text-decoration: none;
  padding: 0 1rem;
  height: 100%;
  cursor: pointer;
- 
- &.active {
-  border-bottom: 3px solid #01bf71;
- }
- 
+
  &:hover {
-  color: #01bf71;
+  color: green;
  }
 `;
 
-export const NavResumeButton = styled.nav`
+export const NavResumeButton = styled.button`
  display: flex;
  align-items: center;
+ background-color: transparent;
+ border: none;
+ font-family: monospace;
+
  @media screen and (max-width: 768px) {
   display: none;
  }
 `;
 
-export const NavResumeBtnLink = styled(Link)`
+export const NavResumeBtnLink = styled.a`
   border-radius: 50px;
-  background: #f343;
+  background: #01bf71;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  
+
   &:hover {
    transition: all 0.2s ease-in-out;
-   background: #01bf71;
-   color: #010606;
+   background: #30ca80;
+   color: #000;
   }
 `;

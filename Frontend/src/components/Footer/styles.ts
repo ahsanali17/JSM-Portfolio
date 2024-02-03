@@ -1,3 +1,4 @@
+//@ts-nocheck
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -15,12 +16,12 @@ export const Foot = styled.div`
  align-items: center;
  justify-content: space-evenly;
 `;
-
+// @ts-ignore
 export const FooterText = styled(Link)`
  font-size: medium;
  font-family: Arial, Helvetica, sans-serif;
  text-decoration: none;
- 
+
  &:hover {
   color: red;
  }
