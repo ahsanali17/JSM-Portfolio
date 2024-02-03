@@ -3,7 +3,7 @@ import {FaHardHat, FaGithub, FaLinkedin, FaTwitter, FaInstagram} from 'react-ico
 import { Lyriks, Filmpire, NiftyMarketplace } from '../assets';
 
 export const nameString = [
-  "Hello world, my name is Ahsan Ali Syed. I'm a Software Developer from Montreal, Canada.<br/><br/> I build ReactJS full-stack applications with modern technologies. On my free time I write smart contracts.",
+  "Hey there! I'm Ahsan Ali Syed, your go-to guy for full-stack solutions with a knack for building sleek, scalable web apps. Stationed in Montreal, I'm all about turning complex problems into user-friendly experiences using the power of ReactJS and a suite of cutting-edge tech. My programming journey is driven by curiosity and the thrill of the 'aha!' moments when everything clicks. Beyond the code, I'm a lifelong learner, always on the lookout for new tech vistas and programming paradigms. Let's connect and create something impactful together!",
 ]
 
 
