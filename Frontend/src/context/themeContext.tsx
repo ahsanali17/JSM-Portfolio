@@ -1,10 +1,14 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { ReactNode, createContext, useContext, useState } from 'react';
 import { GlobalStyle } from '../components/GlobalStyle/GlobalStyle';
 
 type Theme = 'day' | 'night';
 interface ThemeContextType {
  theme: Theme;
  toggleTheme: () => void;
+}
+
+interface ThemeProviderProps {
+ children: ReactNode; // This tells TypeScript that children can be any valid React node
 }
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -17,7 +21,7 @@ export const useTheme = () => {
  return context;
 };
 
-export const ThemeProvider: React.FC = ({ children }) => {
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
  const [theme, setTheme] = useState<Theme>('night');
 
  const toggleTheme = () => {
