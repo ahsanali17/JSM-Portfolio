@@ -24,6 +24,7 @@ export const AboutMainContainer = styled.div`
  flex-direction: column;
  margin-top: 2.5rem;
  padding: 0 10rem;
+ z-index: 1;
 
  @media screen and (max-width: 375px) {
   flex-direction: column;
@@ -46,6 +47,7 @@ export const AboutMeTextAndPicture = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  z-index: 1;
 
   @media screen and (max-width: 2560px) {
     flex-direction: row;

@@ -22,6 +22,7 @@ export const ProjectMainContainer = styled.div`
  margin-top: 2.5rem;
  padding: 0 10rem;
  color: white;
+ z-index: 1;
 
  @media screen and (max-width: 500px) {
   flex-direction: column;
@@ -44,7 +45,7 @@ export const ProjectMainContainer = styled.div`
  }
 `;
 
-export const FeaturedProjectContainer = styled.div`
+export const FeaturedProjectSectionContainer = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;

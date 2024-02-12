@@ -21,6 +21,7 @@ export const ContactMainDiv = styled.div`
  flex-direction: column;
  margin-top: 2.5rem;
  padding: 0 10rem;
+ z-index: 1;
 
  @media screen and (max-width: 375px) {
   flex-direction: column;

@@ -10,6 +10,7 @@ export const RightSidebarWrapper = styled.div`
  right: 3.5rem;
  bottom: 3rem;
  width: 100px;
+ z-index: 2;
 
  @media screen and (max-width: 768px) {
   display: none;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 
-import {TypedReactAnimation} from '..';
+import { TypedReactAnimation } from '..';
 import { HeroProfilePic } from '../../assets';
 import { HeroMainContainer, HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextPartition } from './styles';
 import { nameString } from '../../utils/constants';
@@ -14,14 +14,14 @@ function Hero() {
         <HeroTextPartition>
           <HeroText>
             <TypedReactAnimation stringArray={nameString} typingSpeed={40} backingSpeed={20} animationLoop={false}
-            style={{width:"100px", color: "#ffcc", fontSize:"1.8rem"}}
+              style={{ width: "100px", color: "#ffffff", fontSize: "1.8rem" }}
             />
           </HeroText>
         </HeroTextPartition>
         <HeroPicture>
-            <HeroPictureContainer>
-              <Image src={HeroProfilePic} alt='My hero sections profile picture' fill style={{borderRadius: '20px', boxShadow: "5px 5px 50px #7d7979"}} />
-            </HeroPictureContainer>
+          <HeroPictureContainer>
+            <Image src={HeroProfilePic} alt='My hero sections profile picture' fill style={{ borderRadius: '20px', boxShadow: "5px 5px 50px #7d7979" }} />
+          </HeroPictureContainer>
         </HeroPicture>
 
       </HeroMainContainer>

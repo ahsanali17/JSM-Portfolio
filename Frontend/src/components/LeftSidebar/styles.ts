@@ -5,7 +5,7 @@ import Link from "next/link";
 export const SidebarMenu = styled.div`
     box-sizing: border-box;
     border-radius: 20px;
-
+    z-index: 2;
     transition: .6s;
     position: fixed;
     left: 3.5rem;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FeaturedProjects, ProjectCard } from '../index';
-import { ProjectMainContainer, ProjectSectionContainer, TitleDiv, FeaturedProjectContainer, OtherProjectsContainer } from './styles';
+import { ProjectMainContainer, ProjectSectionContainer, TitleDiv, FeaturedProjectSectionContainer, OtherProjectsContainer } from './styles';
 import { projects, featuredProjects } from '../../utils/constants';
 
 function Projects() {
@@ -12,7 +12,7 @@ function Projects() {
           <h1>Featured Projects</h1>
         </TitleDiv>
 
-        <FeaturedProjectContainer>
+        <FeaturedProjectSectionContainer>
           {featuredProjects.map((item, index) => (
             <div key={index}>
               <FeaturedProjects
@@ -24,7 +24,7 @@ function Projects() {
                 githubRepoLink={item.githubRepoLink} />
             </div>
           ))}
-        </FeaturedProjectContainer>
+        </FeaturedProjectSectionContainer>
 
         <TitleDiv>
           <h1>Other Projects</h1>

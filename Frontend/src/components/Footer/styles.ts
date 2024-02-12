@@ -15,12 +15,14 @@ export const Foot = styled.div`
  display: flex;
  align-items: center;
  justify-content: space-evenly;
+ margin-bottom: 1rem;
 `;
 // @ts-ignore
 export const FooterText = styled(Link)`
- font-size: medium;
+ font-size: large;
  font-family: Arial, Helvetica, sans-serif;
  text-decoration: none;
+ z-index: 1;
 
  &:hover {
   color: red;

@@ -11,12 +11,7 @@ export const FeaturedProjectContainer = styled.div`
  width: 65rem;
  height: 35rem;
  background-color: blue;
- box-shadow: 5px 5px 8px 5px rgb(125 121 121);
  border-radius: 5px;
-
- &:hover {
-  box-shadow:5px 5px 15px 3px rgb(0 128 1);
- }
 
  @media screen and (max-width: 1024px) {
   width: 42rem;

@@ -24,6 +24,7 @@ export const HeroMainContainer = styled.div`
   justify-content: center;
   padding: 100px 300px;
   gap: 10px;
+  z-index: 1;
 
   @media screen and (max-width: 1440px) {
     flex-direction: column;
