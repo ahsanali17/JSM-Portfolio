@@ -12,15 +12,14 @@ const Canvas = styled.canvas`
 
 const RainAnimation: React.FC = () => {
     const { theme } = useTheme();
-    if (theme === 'day') return;
     const canvasRef = useRef<HTMLCanvasElement>(null as any);
     const requestRef = useRef<number | any>();
     const lastDrawTimeRef = useRef<number | any>(0);
-
     // Control the speed of the animation. Lower value means faster animation.
     const [drawInterval] = useState<number>(100); // Time in milliseconds
 
     useEffect(() => {
+        if (theme === 'day') return;
         const canvas = canvasRef.current;
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
@@ -66,9 +65,10 @@ const RainAnimation: React.FC = () => {
                 cancelAnimationFrame(requestRef.current);
             }
         };
-    }, [drawInterval]);
+    }, [drawInterval, theme]);
 
-    return <Canvas theme={theme} ref={canvasRef} />;
+    // Conditional rendering based on theme
+    return theme === 'night' ? <Canvas theme={theme} ref={canvasRef} /> : null;
 };
 
 export default RainAnimation;
