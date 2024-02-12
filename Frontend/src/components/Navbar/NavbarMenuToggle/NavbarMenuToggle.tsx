@@ -1,7 +1,8 @@
-import { Dispatch, MouseEventHandler} from "react";
+import { Dispatch, MouseEventHandler } from "react";
 
 import { NavbarMenuToggleContainer, MenuIcon, CloseIcon, MobileNavbarMenuWrapper, MobileNavbarMenu, MobileNavbarMenuLink, MobileResumeBtnWrap, MobileResumeBtnLink, NavbarSocialIconLinks, SidebarSocialIconsWrapper, MobileNavbarEmailLink, MobileNavbarEmailDiv, MobileNavbarMenuToggleContainer2 } from "./styles";
 import { SidebarData } from "../../../utils/constants";
+import ThemeToggleButton from "../../ThemeToggleButton/toggleThemeButton";
 
 interface NavbarMenuToggle {
   isOpen: boolean;
@@ -14,7 +15,7 @@ interface NavbarMenuToggle {
   }[];
 }
 
-const NavbarMenuToggle = ({isOpen, handleExit, NavbarDataProps}: NavbarMenuToggle) => {
+const NavbarMenuToggle = ({ isOpen, handleExit, NavbarDataProps }: NavbarMenuToggle) => {
 
   return (
     <NavbarMenuToggleContainer isOpen={isOpen}>
@@ -32,21 +33,22 @@ const NavbarMenuToggle = ({isOpen, handleExit, NavbarDataProps}: NavbarMenuToggl
         <MobileResumeBtnWrap>
           <MobileResumeBtnLink href="https://drive.google.com/file/d/1JNBJT-oszA5Mfrcj2hVXy8_KoijTrpxL/view?usp=drivesdk" target="_blank">Resume</MobileResumeBtnLink>
         </MobileResumeBtnWrap>
+        <ThemeToggleButton />
       </MobileNavbarMenuWrapper>
 
       <MobileNavbarMenuToggleContainer2>
-      <MobileNavbarEmailDiv>
-        <MobileNavbarEmailLink href="mailto:ahsantime1@gmail.com">
-          ahsantime1@gmail.com
-        </MobileNavbarEmailLink>
-      </MobileNavbarEmailDiv>
-      <SidebarSocialIconsWrapper>
-        {SidebarData.map((item, index) => (
+        <MobileNavbarEmailDiv>
+          <MobileNavbarEmailLink href="mailto:ahsantime1@gmail.com">
+            ahsantime1@gmail.com
+          </MobileNavbarEmailLink>
+        </MobileNavbarEmailDiv>
+        <SidebarSocialIconsWrapper>
+          {SidebarData.map((item, index) => (
             <NavbarSocialIconLinks href={item.path} target="_blank" rel="noreferrer" key={index}>
               {<item.icon />}
             </NavbarSocialIconLinks>
-        ))}
-      </SidebarSocialIconsWrapper>
+          ))}
+        </SidebarSocialIconsWrapper>
 
       </MobileNavbarMenuToggleContainer2>
     </NavbarMenuToggleContainer>

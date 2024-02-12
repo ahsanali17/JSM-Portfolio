@@ -1,6 +1,22 @@
 //@ts-nocheck
 import styled from "styled-components";
 
+interface ContactArticleH1Props {
+  color: string
+}
+
+interface ContactArticlePProps {
+  color: string
+}
+
+interface ContactFormInputLabelProps {
+  color: string
+}
+
+interface ContactFormButtonDivProps {
+  color: string
+}
+
 export const ContactSectionContainer = styled.section`
   align-content: center;
   align-items: center;
@@ -48,8 +64,8 @@ export const ContactArticleWrapper = styled.div`
  position: relative;
 `;
 
-export const ContactArticleH1 = styled.h1`
- color: white;
+export const ContactArticleH1 = styled.h1<ContactArticleH1Props>`
+ color: ${props => props.color};
  font-size: 3.2em;
  font-weight: bold;
  line-height: 1.3;
@@ -66,8 +82,8 @@ export const ContactArticleH1 = styled.h1`
  }
 `;
 
-export const ContactArticleP = styled.p`
- color: white;
+export const ContactArticleP = styled.p<ContactArticlePProps>`
+ color: ${props => props.color};
  font-size: 1.6em;
  line-height: 1.2;
  letter-spacing: 0.02rem;
@@ -135,8 +151,8 @@ export const ContactFormInputGroup = styled.div`
  }
 `;
 
-export const ContactFormInputLabel = styled.label`
- color: white;
+export const ContactFormInputLabel = styled.label<ContactFormInputLabelProps>`
+ color: ${props => props.color};
  cursor: pointer;
  font-size: 1.6rem;
  font-weight: 200;
@@ -223,7 +239,7 @@ export const ContactFormButton = styled.button`
  cursor: pointer;
 `;
 
-export const ContactFormButtonDiv = styled.div`
+export const ContactFormButtonDiv = styled.div<ContactFormButtonDivProps>`
  z-index: 1;
  display: flex;
  position: relative;
@@ -236,6 +252,6 @@ export const ContactFormButtonDiv = styled.div`
  border: 1px solid green;
 
  &:hover{
-  color: white;
+  color: ${props => props.color};
  }
 `;

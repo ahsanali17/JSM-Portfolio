@@ -1,6 +1,13 @@
 //@ts-nocheck
 import styled from "styled-components";
 
+interface TechStackHeaderProps {
+ color: string;
+}
+interface TechStackParagraphProps {
+ color: string;
+}
+
 export const CardContainer = styled.div`
  display: flex;
  flex-direction: column;
@@ -70,12 +77,13 @@ export const TechStackContainer = styled.div`
  margin-bottom: 0 10px;
 `;
 
-export const TechStackHeader = styled.h5`
+export const TechStackHeader = styled.h5<TechStackHeaderProps>`
  margin: 0px;
+ color: ${props => props.color}
 `;
 
-export const TechStackParagraph = styled.p`
- color: #fff;
+export const TechStackParagraph = styled.p<TechStackParagraphProps>`
+ color: ${props => props.color};
  display: flex;
  justify-content: start;
  align-items: center;

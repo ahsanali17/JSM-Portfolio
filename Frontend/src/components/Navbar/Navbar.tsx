@@ -4,6 +4,8 @@ import * as FaIcons from 'react-icons/fa';
 import { NavbarLogo, NavbarMenuToggle } from '../';
 import { Nav, NavbarContainer, MobileIcon, NavMenuContainer, NavMenu, NavItem, NavItemLink, NavResumeButton, NavResumeBtnLink, HamburgerIcon } from "./styles";
 
+import ThemeToggleButton from "../ThemeToggleButton/toggleThemeButton";
+
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -34,9 +36,10 @@ const Navbar: FC = () => {
             setIsOpen={setIsOpen}
           />
         )}
-        
+
         <NavMenuContainer>
           <NavMenu>
+            <ThemeToggleButton />
             {NavbarData.map((item, index: number) => (
               <NavItem key={index}>
                 <NavItemLink to={item.path}>{item.text}</NavItemLink>

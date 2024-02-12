@@ -1,6 +1,10 @@
 //@ts-nocheck
 import styled from "styled-components";
 
+interface ProjectMainContainerProps {
+  color: string;
+}
+
 export const ProjectSectionContainer = styled.section`
  align-content: center;
  align-items: center;
@@ -14,14 +18,14 @@ export const ProjectSectionContainer = styled.section`
  /* width: 100%; */
 `;
 
-export const ProjectMainContainer = styled.div`
+export const ProjectMainContainer = styled.div<ProjectMainContainerProps>`
  align-items: center;
  box-align: center;
  display: flex;
  flex-direction: column;
  margin-top: 2.5rem;
  padding: 0 10rem;
- color: white;
+ color: ${props => props.black};
  z-index: 1;
 
  @media screen and (max-width: 500px) {

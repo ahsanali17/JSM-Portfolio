@@ -2,6 +2,10 @@
 import styled from 'styled-components'
 import Link from "next/link";
 
+interface MenuItemProps {
+    color: string;
+}
+
 export const SidebarMenu = styled.div`
     box-sizing: border-box;
     border-radius: 20px;
@@ -25,13 +29,13 @@ export const MenuItems = styled.li`
     padding: 1rem 0 1.25rem;
 `;
 
-export const MenuItemLinks = styled.a`
+export const MenuItemLinks = styled.a<MenuItemProps>`
     display: flex;
     align-items: center;
     padding: 0 2rem;
     font-size: 20px;
     text-decoration: none;
-    color: #fff;
+    color: ${props => props.color};
     &:hover {
         color: green;
         width: 100%;

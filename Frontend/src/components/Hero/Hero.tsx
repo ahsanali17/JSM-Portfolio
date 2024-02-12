@@ -5,16 +5,20 @@ import { TypedReactAnimation } from '..';
 import { HeroProfilePic } from '../../assets';
 import { HeroMainContainer, HeroPicture, HeroPictureContainer, HeroSection, HeroText, HeroTextPartition } from './styles';
 import { nameString } from '../../utils/constants';
+import { useTheme } from '../../context/themeContext';
 
 function Hero() {
+  const { theme } = useTheme()
+  const isItDay = theme === 'day' ? true : false;
+
   return (
-    <HeroSection backgroundColor="#000ff906" fontColor="#ffffff">
+    <HeroSection backgroundColor={isItDay ? "#fff" : '#000'} fontColor="#ffffff">
       <HeroMainContainer>
 
         <HeroTextPartition>
           <HeroText>
             <TypedReactAnimation stringArray={nameString} typingSpeed={40} backingSpeed={20} animationLoop={false}
-              style={{ width: "100px", color: "#ffffff", fontSize: "1.8rem" }}
+              style={{ width: "100px", color: isItDay ? '#000' : '#fff', fontSize: "1.8rem" }}
             />
           </HeroText>
         </HeroTextPartition>

@@ -3,11 +3,15 @@ import React from 'react'
 import { FeaturedProjects, ProjectCard } from '../index';
 import { ProjectMainContainer, ProjectSectionContainer, TitleDiv, FeaturedProjectSectionContainer, OtherProjectsContainer } from './styles';
 import { projects, featuredProjects } from '../../utils/constants';
+import { useTheme } from '../../context/themeContext';
 
 function Projects() {
+  const { theme } = useTheme()
+  const isItDay = theme === 'day' ? true : false;
+
   return (
     <ProjectSectionContainer id="#Projects">
-      <ProjectMainContainer>
+      <ProjectMainContainer color={isItDay ? '#000' : '#fff'}>
         <TitleDiv>
           <h1>Featured Projects</h1>
         </TitleDiv>

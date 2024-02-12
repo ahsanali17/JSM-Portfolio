@@ -1,6 +1,10 @@
 //@ts-nocheck
 import styled from 'styled-components'
 
+interface RightSidebarProps {
+ color: string;
+}
+
 export const RightSidebarWrapper = styled.div`
  box-sizing: border-box;
  border-radius: 20px;
@@ -25,11 +29,11 @@ export const RightSidebarDiv = styled.div`
  position: relative;
 `;
 
-export const RightSidebarLink = styled.a`
+export const RightSidebarLink = styled.a<RightSidebarProps>`
  margin: 20px auto;
  padding: 10px;
  font-family: 'Times New Roman', Times, serif;
- color: #fff;
+ color: ${props => props.color};
  /* font-size: var(--fz-xxs); */
  line-height: var(--fz-lg);
  letter-spacing: 0.1em;

@@ -1,16 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import { useTheme } from '../../context/themeContext';
 
 const Canvas = styled.canvas`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
   color: green;
   z-index: 1;
 `;
 
 const RainAnimation: React.FC = () => {
+    const { theme } = useTheme();
+    if (theme === 'day') return;
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const requestRef = useRef<number>();
     const lastDrawTimeRef = useRef<number>(0);
@@ -66,7 +68,7 @@ const RainAnimation: React.FC = () => {
         };
     }, [drawInterval]);
 
-    return <Canvas ref={canvasRef} />;
+    return <Canvas theme={theme} ref={canvasRef} />;
 };
 
 export default RainAnimation;
