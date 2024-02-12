@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { useTheme } from '../../context/themeContext';
 
@@ -13,9 +13,9 @@ const Canvas = styled.canvas`
 const RainAnimation: React.FC = () => {
     const { theme } = useTheme();
     if (theme === 'day') return;
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    const requestRef = useRef<number>();
-    const lastDrawTimeRef = useRef<number>(0);
+    const canvasRef = useRef<HTMLCanvasElement>(null as any);
+    const requestRef = useRef<number | any>();
+    const lastDrawTimeRef = useRef<number | any>(0);
 
     // Control the speed of the animation. Lower value means faster animation.
     const [drawInterval] = useState<number>(100); // Time in milliseconds
